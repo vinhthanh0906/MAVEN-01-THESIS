@@ -1,0 +1,153 @@
+\section{Electrical System}
+MAVEN-01 is designed to be an affordable autonomous vehicle platform for research and educational purposes, so
+as we chose low range price electrical components but still make sure the rover has solid performance by price.
+
+\vspace{1em}
+We use two 6C 18650 lithium batteries as the main power source for most of the system, include motor, sensors and lights.
+Lithium battery always has better power capacity and can be recharged. Two 6C 18650 batteries provide total 7.4V and 13A, which
+more than enough for the whole system requirement. 
+
+\vspace{1em}
+
+\textbf{Motor Electrical Diagram}
+Place holder
+
+
+\vspace{1em}
+
+\par
+Two TT motor consume of total 6V due to the parallel wiring method through L298N, this motor driver 
+allow power input in range from 5V to 12V, the maximum current <=2A, which are enough for two gear motors with total 
+maximum current consume are ~600mA. All calculation follow the Ohm's law, parallel connected module share constant voltage 
+with cumulative currents. 
+
+\textbf{Ohm's law}
+\[
+V = IR
+\]
+
+\textbf{Total current of parallel gear arrangement}
+\[
+I_{\text{total}} = I_1 + I_2 + \cdots + I_n 
+\]
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{/Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png}
+    \caption{Schematic Diagram of L298N H-bridge DC motor driver }
+    \label{fig:l298_schematic}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{images/electrical_schematics/L298N_image.png}
+    \caption{L298N H-bridge DC motor driver }
+    \label{fig:h_bridge}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{images/electrical_schematics/h_bridge.png}
+    \caption{Schematic Diagram of L298N H-bridge DC motor driver }
+    \label{fig:h_bridge}
+\end{figure}
+
+L298N has a structure called an H-bridge, which allows it to have a total of 4 cases of current direction to control DC motors. 
+In Figure~\ref{fig:h_bridge}, we can see an example of a single motor in an H-bridge circuit. 
+When \verb|S3| and \verb|S1| are closed, it allows DC current to run through the motor, making it spin counterclockwise. 
+On the other hand, if \verb|S1| and \verb|S4| are closed while \verb|S3| and \verb|S2| are open, DC current will run through and make the motor spin in the clockwise direction. L298N has two H-bridge circuits, which in theory can control more than 2 DC motors, as long as the current limit is not exceeded.
+
+\vspace{1.5em}
+\par
+During the development process, we tested with 1 and 2 DC motors on each bridge and concluded that the L298N can handle 4 DC motors with a total current of approximately 1.2A. 
+However, the movement capability will be similar to using 2 motors since the L298N only has 2 H-bridges.
+ For better control and manipulation, we decided to switch to a 4-channel motor driver module.
+
+\subsection{Control Protocol}
+
+MAVEN-01 was designed to be teleoperated, so it needs a control board that has some kind of wireless send-and-receive mechanism.
+Most of the time, radio signal is the first choice because of its wide range, stable connection, and relatively low power consumption.
+However, complete radio control requires a full set including a remote control, transmitter, receiver, etc., which increases the overall cost significantly.
+
+\vspace{1.5em}
+In our project, we choose Wi-Fi as the main method to control the rover, not only for control but also to receive data from sensors attached to the rover. 
+Because MAVEN-01 is designed for research purposes, Wi-Fi is a better choice. We only need a Wi-Fi built-in microcontroller board such as ESP32 or ESP8266. 
+Sensor data are usually complex, so they require a high-bandwidth and low-latency signal to transmit. In this case, Wi-Fi performs better than radio, but the trade-off is higher latency 
+and power consumption due to the higher frequency compare to normal radio signal.
+
+\vspace{1.5em}
+
+
+\subsection{Control Unit: WEMOS D1 R32 (ESP32 based)}
+ESP32 is a microcontroller board with built-in WiFi and Bluetooth that we chose as the main control unit.
+With its integrated WiFi module, it enables wireless control and sensor data transmission.
+Compared to other boards such as Arduino UNO R4 or ESP8266, ESP32 offers faster processing speed and more GPIO pins, 
+allowing more sensors to be connected. It is also affordable.
+
+\vspace{1.5em}\par
+\textbf{Board Comparison}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lcccc}
+\hline
+\textbf{Feature} & \textbf{ESP32} & \textbf{Pico W} & \textbf{ESP8266} & \textbf{UNO R4 WiFi} \\
+\hline
+CPU & Dual-core 240 MHz & Dual-core 133 MHz & Single-core 80 MHz & 48 MHz Cortex-M4 \\
+RAM & 520 KB & 264 KB & 160 KB & 32 KB \\
+Flash & 4 MB & 2 MB & 4 MB & 256 KB \\
+WiFi & Yes & Yes & Yes & Yes \\
+Bluetooth & Yes & No & No & No \\
+GPIO & $\sim$30 & 26 & $\sim$17 & 14 \\
+RTOS & Yes (FreeRTOS) & No & No & No \\
+Real-time & Medium & High & Medium & High \\
+Power & Medium & Low & Low & Low \\
+Price (VND) & $\sim$120k & $\sim$180k & $\sim$70k & $\sim$700k--1M \\
+\hline
+\end{tabular}
+\caption{Comparison of ESP32, Pico W, ESP8266, and Arduino UNO R4 WiFi}
+\end{table}
+
+ESP32 has many variants suitable for specific tasks. 
+It also supports camera modules such as OV2640 or OV5640 for video streaming, making it suitable as an FPV camera for the rover.
+In MAVEN-01, we used an Arduino-based ESP32 board called \href{https://handsontec.com/dataspecs/module/ESP/WeMos%20D1%20R32.pdf}{WEMOS D1 R32}. 
+This board uses the same dual-core processor and features as the standard ESP32 from \href{https://www.espressif.com/}{Espressif}, 
+but is easier to use due to its Arduino-like form factor.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, page= 6]{doc/D1_R32_ENG.pdf}
+    \caption{Wemos D1 R32 pins maps, more information about detailed pinout description in \href{https://documentation.espressif.com/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}{here}}
+    \label{fig:chasis_1_engine_blueprint}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

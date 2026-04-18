@@ -1,0 +1,97 @@
+\documentclass[times, 10pt]{thesisMDH}
+
+
+
+%Package importation 
+\usepackage[ddmmyyyy]{datetime}
+\usepackage[pdfborder={0 0 0},colorlinks=true,urlcolor=blue,citecolor=red,bookmarks=false]{hyperref}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{caption}
+
+%reference package
+\usepackage{hyperref}
+\usepackage{pdfpages}
+
+
+%Figure & table config
+\usepackage{booktabs} % For professional lines
+\usepackage{tabularx} % For auto-wrapping text
+\usepackage{xcolor}
+
+
+
+
+\addbibresource{references.bib}
+
+\fancyHeader{Maven-01}{Vinh Thanh Nguyen }
+
+\university{University of Science and Technologies Hanoi}
+
+\department{Information Communication and Technologies department}
+
+\subject{Thesis for the Degree of Master of Science in Data Science \& Robotics  }
+\thesisTitle{Maven-01: A Teleopeated Rover Platform for Planetary Exploration }
+\authorOne{Vinh Thanh Nguyen}{vinhnt.23bi14453@usth.edu.vn}
+
+\supervisors{Pham Xuan Tung}{University of Science of Technologies Hanoi}
+
+
+\theDate{\today} 
+
+\begin{document}
+\titlePage
+% Begin actual text
+\frontmatter
+
+%========= Tables ==========
+{\hypersetup{linkcolor=black}\tableofcontents}
+\clearpage
+{\hypersetup{linkcolor=black}\listoffigures}
+\clearpage
+{\hypersetup{linkcolor=black}\listoftables}
+
+
+% Abstract 
+\input{sections/abstract}
+\newpage
+
+
+\mainmatter
+% ===== Content: Modify the structure according to your needs =======
+\input{sections/introduction}
+\input{sections/design.tex} %Structure design 
+\newpage
+\input{sections/eletrical_systems.tex}
+\newpage
+\input{sections/method}
+\newpage
+\input{sections/etics}
+\newpage
+\input{sections/contribs}
+\newpage
+\input{sections/results}
+\newpage
+\input{sections/discussion}
+\newpage
+\input{sections/conclusions}
+\newpage
+%\input{sections/Acknowledgments}
+% ============================= References ============================
+% \newpage
+\printbibliography
+\addcontentsline{toc}{section}{References}
+
+% ============================ Appendices =============================
+%\newpage
+%\begin{appendices}
+
+	%\input{appendices/appendices1}
+	%\clearpage
+	
+	%\input{appendices/appendices2}
+	%\clearpage
+	
+%\end{appendices}
+
+\end{document}

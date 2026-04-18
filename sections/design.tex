@@ -1,0 +1,97 @@
+\section{Design and Development}
+\label{sec:background}
+
+\subsection{Structure Design Overview}
+
+\textbf{First Version}
+
+MAVEN-01 was first designed as a two-tracked, tank-type vehicle platform using two 6V TT gear motors for each track. 
+The size of the rover frame platform is 16.8 × 11 cm. The reason why the first body was small is due to the space limitation 
+of the printing plate area of the Bambu Lab A1 Mini, which is our 3D printer. During the process, there were two material options: PLA and PETG. 
+PETG is cheaper than PLA and offers higher durability and better heat resistance, but it is harder to print and requires careful storage 
+due to its humidity-sensitive properties.
+
+\par
+We chose PLA for its easier printing process and better print consistency, which is more suitable for rapid prototyping and iterative design. 
+PETG might be chosen for more specific missions that require higher durability in harsher environments.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{images/blueprint/maven_01_first_prototype.pdf}
+    \caption{Blueprint of MAVEN-01 first prototype}
+    \label{fig:first_vers_blueprint}
+\end{figure}
+
+
+\text{Disadvantages}
+However, there are some disadvantages in the first design that should be carefully considered. 
+Due to the low ground clearance, this design cannot operate effectively in rugged terrain.
+
+Another disadvantage is that the track can slip off the wheels due to the unstable drive wheel. 
+In the first design, I used M4×30 screws and nuts to mount the drive wheel and front wheel. 
+This design has a weakness: during testing, the screws wore into the wheel holes on the body, 
+which caused the drive wheels to loosen over time, making the track structure weaker.
+
+The last weakness of this design is two engines are mounted inside the rover body, which 
+occupy a large space, we can put more components inside base body. During operation time, two DC motor 
+can generate heat which can effect on micro-control board, also not ideal for PLA body due to not limited heat resistance.
+
+
+\begin{table}[ht]
+    \centering
+    \label{tab:pla_vs_petg}
+    \begin{tabularx}{\textwidth}{@{} l X X @{}}
+        \toprule
+        \textbf{Feature} & \textbf{PLA (Polylactic Acid)} & \textbf{PETG (Polyethylene Terephthalate Glycol)} \\
+        \midrule
+        \textbf{Printability} & Very Easy. Low warping, no enclosure needed. & Moderate. Requires higher temps; prone to stringing. \\
+        \addlinespace
+        \textbf{Strength} & High tensile strength but brittle. & High impact resistance and more flexible. \\
+        \addlinespace
+        \textbf{Temp. Resistance} & Low (softens at ~70°C). Not for hot environments. & Moderate (softens at ~85°C). Better for motors/sunlight. \\
+        \addlinespace
+        \textbf{Durability} & Low. Can degrade outdoors over long periods. & High. UV resistant and chemically stable. \\
+        \addlinespace
+        \textbf{Post-Processing} & Easy to sand and paint. & Difficult to sand due to its "gummy" nature. \\
+        \bottomrule
+    \end{tabularx}
+    \caption{Comparison of PLA and PETG for Robotics Prototyping}
+\end{table}
+
+
+
+\textbf{Second Version}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
+    \caption{MAVEN-01 second prototype design using separate chassis with chained tracks (Single motor chassis) }
+    \label{fig:chasis_1_engine_blueprint}
+\end{figure}
+
+\par
+In this version, we improve the design completely to fix the disadvantages of the first design. We move the track system into a separate module,
+which allows more space in the base rover body. With the separate track module, the ground clearance can be higher, allowing MAVEN-01 to adapt to different terrain types and rough surfaces.
+The \href{https://www.st.com/resource/en/datasheet/l298.pdf}{L298N} motor driver module and gear motor heating problems are also solved by the open-surface chassis design, which allows open-air ventilation to work as a cooling system.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/blueprint/chassis_1_engine.pdf}
+    \caption{Single motor chassis blueprint for 6V TT gear motor with open surface for motor air cooling }
+    \label{fig:chasis_1_engine_blueprint}
+\end{figure}
+
+\textbf{Drive wheel design}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/blueprint/drive_wheels.pdf}
+    \caption{Driver wheels blueprint for MAVEN-01}
+    \label{fig:chasis_1_engine_blueprint}
+\end{figure}
+
+Each TT motor will have two drive wheels act as anchors for track chains attached.
+\par
+\textbf(LOG: 16/4/2026)
+

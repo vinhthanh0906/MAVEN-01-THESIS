@@ -1,0 +1,10 @@
+\babel@toc {british}{}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Curiosity and Opportunity Rovers hold record for two longest operating time, 14 years (~5100 Sols) for Opportunity and 13.7 years (4863 Sols) for Curiosity.}}{1}{figure.caption.5}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Blueprint of MAVEN-01 first prototype}}{2}{figure.caption.6}%
+\contentsline {figure}{\numberline {3}{\ignorespaces MAVEN-01 second prototype design using separate chassis with chained tracks (Single motor chassis) }}{3}{figure.caption.8}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Single motor chassis blueprint for 6V TT gear motor with open surface for motor air cooling }}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Driver wheels blueprint for MAVEN-01}}{5}{figure.caption.10}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Schematic Diagram of L298N H-bridge DC motor driver }}{6}{figure.caption.11}%
+\contentsline {figure}{\numberline {7}{\ignorespaces L298N H-bridge DC motor driver }}{7}{figure.caption.12}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Schematic Diagram of L298N H-bridge DC motor driver }}{7}{figure.caption.13}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Wemos D1 R32 pins maps, more information about detailed pinout description in \href {https://documentation.espressif.com/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}{here}}}{9}{figure.caption.15}%
