@@ -8,3 +8,4 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces L298N H-bridge DC motor driver }}{7}{figure.caption.12}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Schematic Diagram of L298N H-bridge DC motor driver }}{7}{figure.caption.13}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Wemos D1 R32 pins maps, more information about detailed pinout description in \href {https://documentation.espressif.com/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}{here}}}{9}{figure.caption.15}%
+\contentsline {figure}{\numberline {10}{\ignorespaces DHT11 detailed specification table including ideal working conditions and operating range}}{10}{figure.caption.16}%
