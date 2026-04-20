@@ -130,10 +130,137 @@ but is easier to use due to its Arduino-like form factor.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth, page= 6]{doc/D1_R32_ENG.pdf}
+    \includegraphics[width=\linewidth, page= 6]{images/electrical/d1_r32.png}
     \caption{Wemos D1 R32 pins maps, more information about detailed pinout description in \href{https://documentation.espressif.com/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}{here}}
     \label{fig:chasis_1_engine_blueprint}
 \end{figure}
+
+
+
+\newpage
+\subsection{Temperature ana humidity sensor: DHT11}
+\par
+\textbf{Overview}
+\vspace{1em}
+
+DHT11 Temperature \& Humidity Sensor features a temperature \& humidity sensor
+complex with a calibrated digital signal output. By using the exclusive digital-signal-acquisition
+technique and temperature \& humidity sensing technology, it ensures high reliability and
+excellent long-term stability. This sensor includes a resistive-type humidity measurement
+component and an NTC temperature measurement component, and connects to a highperformance 8-bit microcontroller, offering excellent quality, fast response, anti-interference
+ability and cost-effectiveness.
+
+\vspace{1em}
+Each DHT11 element is strictly calibrated in the laboratory that is extremely accurate on
+humidity calibration. The calibration coefficients are stored as programmes in the OTP memory,
+which are used by the sensor’s internal signal detecting process. The single-wire serial interface
+makes system integration quick and easy. Its small size, low power consumption and up-to-20
+meter signal transmission making it the best choice for various applications, including those
+most demanding ones. The component is 4-pin single row pin package. It is convenient to
+connect and special packages can be provided according to users’ request.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, page= 6]{images/information/dht_11/dht11_specification.png}
+    \caption{DHT11 detailed specifications table, more information in \href{https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOoo4KPsepnO3XUCcgH6oYdE1Du44-sTxlVKOcYUqFeMKRha0P2Xu}{here} }
+    \label{fig:dht11_spec_table}
+\end{figure}
+
+\par
+\textbf{Power and pins}
+\par
+DHT11’s power supply is 3-5.5V DC. When power is supplied to the sensor, do not send any
+instruction to the sensor in within one second in order to pass the unstable status. One
+capacitor valued 100nF can be added between VDD and GND for power filtering.
+
+\newpage
+
+\textbf{ Communication Process: Serial Interface (Single-Wire Two-Way)}
+\par
+Single-bus data format is used for communication and synchronization between MCU and
+DHT11 sensor. One communication process is about 4ms.
+Data consists of decimal and integral parts. A complete data transmission is 40bit, and the
+sensor sends higher data bit first.
+Data format: 8bit integral RH data + 8bit decimal RH data + 8bit integral T data + 8bit decimal T
+data + 8bit check sum. If the data transmission is right, the check-sum should be the last 8bit of
+"8bit integral RH data + 8bit decimal RH data + 8bit integral T data + 8bit decimal T data".
+
+\vspace{1.5em}
+
+\textbf{Overall Communication Process}
+\par
+
+When MCU sends a start signal, DHT11 changes from the low-power-consumption mode to the
+running-mode, waiting for MCU completing the start signal. Once it is completed, DHT11 sends a
+response signal of 40-bit data that include the relative humidity and temperature information to
+MCU. Users can choose to collect (read) some data. Without the start signal from MCU, DHT11
+will not give the response signal to MCU. Once data is collected, DHT11 will change to the lowpower-consumption 
+mode until it receives a start signal from MCU again.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, page= 6]{images/information/dht_11/dht11_communciation.png}
+    \caption{Detailed DHT 11 communication signal figure with MCU }
+    \label{fig:dht11_comms_mcu}
+\end{figure}
+
+
+\vspace{1.5em}
+Data Single-bus free status is at high voltage level. When the communication between MCU and
+DHT11 begins, the programme of MCU will set Data Single-bus voltage level from high to low
+and this process must take at least 18ms to ensure DHT’s detection of MCU's signal, then MCU
+will pull up voltage and wait 20-40µs for DHT’s response.
+
+\vspace{1.5em}
+\textbf{MCU send 'wake up' signal to DHT11}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, page= 6]{images/information/dht_11/dht11_signout.png}
+    \caption{MCU Sends out Start Signal \& DHT Responses}
+    \label{fig:mcu_start_dht11}
+\end{figure}
+
+\newpage
+\textbf{DHT11 'waves back' to the MCU}
+
+Once DHT detects the start signal, it will send out a low-voltage-level response signal, which
+lasts 80µs. Then the programme of DHT sets Data Single-bus voltage level from low to high and
+keeps it for 80µs for DHT’s preparation for sending data.
+When DATA Single-Bus is at the low voltage level, this means that DHT is sending the response
+signal. Once DHT sent out the response signal, it pulls up voltage and keeps it for 80µs and
+prepares for data transmission.
+When DHT is sending data to MCU, every bit of data begins with the 50µs low-voltage-level and
+the length of the following high-voltage-level signal determines whether data bit is "0" or "1"
+,see Figures ~\ref{fig:dht11_data_0} and ~\ref{fig:dht11_data_1}.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, page= 6]{images/information/dht_11/dht11_data_0.png}
+    \caption{ Data "0" Indication}
+    \label{fig:dht11_data_0}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, page= 6]{images/information/dht_11/dht11_data_1.png}
+    \caption{Data "1" Indication}
+    \label{fig:dht11_data_1}
+\end{figure}
+
+\newpage
+\textbf{Electrical Characteristics}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, page= 6]{images/information/dht_11/dht11_electric_table.png}
+    \caption{DHT11's electrical characteristics table}
+    \label{fig:dht11_electrical__characteristic_table}
+\end{figure}
+
+
+\subsection{Distance measurement sensors: HC-SR04}
+
 
 
 
