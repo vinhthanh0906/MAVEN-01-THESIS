@@ -3,6 +3,7 @@ MAVEN-01 is designed to be an affordable autonomous vehicle platform for researc
 as we chose low range price electrical components but still make sure the rover has solid performance by price.
 
 \vspace{1em}
+\text{Power source}
 We use two 6C 18650 lithium batteries as the main power source for most of the system, include motor, sensors and lights.
 Lithium battery always has better power capacity and can be recharged. Two 6C 18650 batteries provide total 7.4V and 13A, which
 more than enough for the whole system requirement. 
@@ -10,8 +11,13 @@ more than enough for the whole system requirement.
 \vspace{1em}
 
 \textbf{Motor Electrical Diagram}
-Place holder
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/diagram/tt_motor_l298.png}
+    \caption{Diagram of connections between L289N with 2 6V TT gear motors}
+    \label{fig:l298n_2_motors}
+\end{figure}
 
 \vspace{1em}
 
@@ -34,19 +40,18 @@ I_{\text{total}} = I_1 + I_2 + \cdots + I_n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{images/electrical_schematics/L298N.png}
-    \caption{Schematic Diagram of L298N H-bridge DC motor driver }
-    \label{fig:l298_schematic}
+    \includegraphics[width=0.8\linewidth]{images/electrical_schematics/L298N_image.png}
+    \caption{L298N H-bridge DC motor driver }
+    \label{fig:h_bridge}
 \end{figure}
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/electrical_schematics/L298N_image.png}
-    \caption{L298N H-bridge DC motor driver }
-    \label{fig:h_bridge_1}
+    \includegraphics[width=0.9\linewidth]{/Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png}
+    \caption{Schematic Diagram of L298N H-bridge DC motor driver }
+    \label{fig:l298_schematic}
 \end{figure}
-
 
 
 
@@ -54,8 +59,11 @@ I_{\text{total}} = I_1 + I_2 + \cdots + I_n
     \centering
     \includegraphics[width=0.5\linewidth]{images/electrical_schematics/h_bridge.png}
     \caption{Schematic Diagram of L298N H-bridge DC motor driver }
-    \label{fig:h_bridge_2}
+    \label{fig:h_bridge}
 \end{figure}
+
+
+
 
 L298N has a structure called an H-bridge, which allows it to have a total of 4 cases of current direction to control DC motors. 
 In Figure~\ref{fig:h_bridge}, we can see an example of a single motor in an H-bridge circuit. 
@@ -124,41 +132,15 @@ but is easier to use due to its Arduino-like form factor.
     \centering
     \includegraphics[width=\linewidth, page= 6]{doc/D1_R32_ENG.pdf}
     \caption{Wemos D1 R32 pins maps, more information about detailed pinout description in \href{https://documentation.espressif.com/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}{here}}
-    \label{fig:wemos_d1_r32}
+    \label{fig:chasis_1_engine_blueprint}
 \end{figure}
 
 
 
-\subsection{Temperature and Humidity sensor:DHT11}
-DHT11 Temperature \& Humidity Sensor features a temperature \& humidity sensor
-complex with a calibrated digital signal output. By using the exclusive digital-signal-acquisition
-technique and temperature \& humidity sensing technology, it ensures high reliability and
-excellent long-term stability. This sensor includes a resistive-type humidity measurement
-component and an NTC temperature measurement component, and connects to a highperformance 8-bit microcontroller,
-offering excellent quality, fast response, anti-interference ability and cost-effectiveness.
-
-\vspace{1.5em}
 
 
-Each DHT11 element is strictly calibrated in the laboratory that is extremely accurate on
-humidity calibration. The calibration coefficients are stored as programmes in the OTP memory,
-which are used by the sensor’s internal signal detecting process. The single-wire serial interface
-makes system integration quick and easy. Its small size, low power consumption and up-to-20
-meter signal transmission making it the best choice for various applications, including those
-most demanding ones. The component is 4-pin single row pin package. It is convenient to
-connect and special packages can be provided according to users’ request
 
-\vspace{1.5em}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\linewidth]{images/information/dht_11/dht11_specification.png}
-    \caption{DHT11 detailed specification table including ideal working conditions and operating range}
-    \label{fig:dht11_specification}
-\end{figure}
-
-%may need to correct again 
-\includepdf[pages={5-9}]{doc/DHT11.pdf}
 
 
 

@@ -4,7 +4,6 @@
 \subsection{Structure Design Overview}
 
 \textbf{First Version}
-\vspace{1em}
 
 MAVEN-01 was first designed as a two-tracked, tank-type vehicle platform using two 6V TT gear motors for each track. 
 The size of the rover frame platform is 16.8 × 11 cm. The reason why the first body was small is due to the space limitation 
@@ -33,6 +32,7 @@ In the first design, I used M4×30 screws and nuts to mount the drive wheel and 
 This design has a weakness: during testing, the screws wore into the wheel holes on the body, 
 which caused the drive wheels to loosen over time, making the track structure weaker.
 
+\vspace{1em}
 The last weakness of this design is two engines are mounted inside the rover body, which 
 occupy a large space, we can put more components inside base body. During operation time, two DC motor 
 can generate heat which can effect on micro-control board, also not ideal for PLA body due to not limited heat resistance.
@@ -65,9 +65,9 @@ can generate heat which can effect on micro-control board, also not ideal for PL
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
+    \includegraphics[width=0.9\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
     \caption{MAVEN-01 second prototype design using separate chassis with chained tracks (Single motor chassis) }
-    \label{fig:maven_01_2nd}
+    \label{fig:chasis_1_engine_blueprint}
 \end{figure}
 
 \par
@@ -76,29 +76,38 @@ which allows more space in the base rover body. With the separate track module, 
 The \href{https://www.st.com/resource/en/datasheet/l298.pdf}{L298N} motor driver module and gear motor heating problems are also solved by the open-surface chassis design, which allows open-air ventilation to work as a cooling system.
 
 
-
-\subsection{Chassis design}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/blueprint/chassis_1_engine.pdf}
+    \includegraphics[width=\linewidth]{images/blueprint/chassis_1_engine.pdf}
     \caption{Single motor chassis blueprint for 6V TT gear motor with open surface for motor air cooling }
     \label{fig:chasis_1_engine_blueprint}
 \end{figure}
 
-\subsection{Drive wheel design}
+\textbf{Drive wheel design}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{images/blueprint/drive_wheels.pdf}
     \caption{Driver wheels blueprint for MAVEN-01}
-    \label{fig:drive_wheels}
+    \label{fig:chasis_1_engine_blueprint}
 \end{figure}
 
-Each TT motor will have two drive wheels act as anchors for track chains attached, in single motor version chasis
-two drive wheels will be use, four for the double motors version. 
+Each TT motor will have two drive wheels act as anchors for track chains attached. Drive wheels can be 
+attached info motor axises using glue or M2x10 to M2x12 tap screws. 
 
-\subsection{Frontpanel design}
+\vspace{1em}
 
-\textbf(Log 18/4/2026: this go pretty well )
+\textbf{Passive wheel design}
+\par
+Passive wheel were design to attach 6700zz bearing for smooth rotation, 6700zz has size of 
+15x10x4MM, mounted and screwed with M5x10 tap screw and M5 nuts as holding reinforcement. 
+\par
+\textbf{Place holder: front wheel 2d cad}
+\vspace{1em}
+
+\textbf{Front axis}
+\textbf{Place holder: front axis 2d cad}
+
+
 
 
