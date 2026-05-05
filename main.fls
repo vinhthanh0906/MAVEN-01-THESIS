@@ -364,10 +364,15 @@ INPUT ./images/rover_reference /curiosity.png
 INPUT ./images/rover_reference /curiosity.png
 INPUT ./images/rover_reference /curiosity.png
 INPUT ./images/rover_reference /curiosity.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
+INPUT ./images/diagram/MAVEN-01-diagram.png
+INPUT ./images/diagram/MAVEN-01-diagram.png
+INPUT ./images/diagram/MAVEN-01-diagram.png
+INPUT ./images/diagram/MAVEN-01-diagram.png
+INPUT ./images/diagram/MAVEN-01-diagram.png
 INPUT ./sections/design.tex
 INPUT ./sections/design.tex
 INPUT sections/design.tex
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
 INPUT ./images/blueprint/maven_01_first_prototype.pdf
 INPUT ./images/blueprint/maven_01_first_prototype.pdf
@@ -390,6 +395,16 @@ INPUT ./images/blueprint/drive_wheels.pdf
 INPUT ./images/blueprint/drive_wheels.pdf
 INPUT ./images/blueprint/drive_wheels.pdf
 INPUT ./images/blueprint/drive_wheels.pdf
+INPUT ./images/blueprint/front_wheel_6700zz_bearing_oriented.pdf
+INPUT ./images/blueprint/front_wheel_6700zz_bearing_oriented.pdf
+INPUT ./images/blueprint/front_wheel_6700zz_bearing_oriented.pdf
+INPUT ./images/blueprint/front_wheel_6700zz_bearing_oriented.pdf
+INPUT ./images/blueprint/front_wheel_6700zz_bearing_oriented.pdf
+INPUT ./images/blueprint/front-center-axle-m5-bolt_drawing.pdf
+INPUT ./images/blueprint/front-center-axle-m5-bolt_drawing.pdf
+INPUT ./images/blueprint/front-center-axle-m5-bolt_drawing.pdf
+INPUT ./images/blueprint/front-center-axle-m5-bolt_drawing.pdf
+INPUT ./images/blueprint/front-center-axle-m5-bolt_drawing.pdf
 INPUT ./sections/eletrical_systems.tex
 INPUT ./sections/eletrical_systems.tex
 INPUT sections/eletrical_systems.tex
@@ -451,6 +466,26 @@ INPUT ./images/information/dht_11/dht11_electric_table.png
 INPUT ./images/information/dht_11/dht11_electric_table.png
 INPUT ./images/information/dht_11/dht11_electric_table.png
 INPUT ./images/information/dht_11/dht11_electric_table.png
+INPUT ./images/electrical/hc_sr04.png
+INPUT ./images/electrical/hc_sr04.png
+INPUT ./images/electrical/hc_sr04.png
+INPUT ./images/electrical/hc_sr04.png
+INPUT ./images/electrical/hc_sr04.png
+INPUT ./images/electrical_schematics/hcsr04_timing.png
+INPUT ./images/electrical_schematics/hcsr04_timing.png
+INPUT ./images/electrical_schematics/hcsr04_timing.png
+INPUT ./images/electrical_schematics/hcsr04_timing.png
+INPUT ./images/electrical_schematics/hcsr04_timing.png
+INPUT ./images/electrical_schematics/hcsr04_mcu.png
+INPUT ./images/electrical_schematics/hcsr04_mcu.png
+INPUT ./images/electrical_schematics/hcsr04_mcu.png
+INPUT ./images/electrical_schematics/hcsr04_mcu.png
+INPUT ./images/electrical_schematics/hcsr04_mcu.png
+INPUT ./images/electrical_schematics/mpu9250-block-diagram.png
+INPUT ./images/electrical_schematics/mpu9250-block-diagram.png
+INPUT ./images/electrical_schematics/mpu9250-block-diagram.png
+INPUT ./images/electrical_schematics/mpu9250-block-diagram.png
+INPUT ./images/electrical_schematics/mpu9250-block-diagram.png
 INPUT ./sections/monitoring_system.tex
 INPUT ./sections/monitoring_system.tex
 INPUT sections/monitoring_system.tex

@@ -1,15 +1,17 @@
 \babel@toc {british}{}\relax 
 \contentsline {section}{\numberline {1.}Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2.}Design and Development}{1}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Structure Design Overview}{1}{subsection.2.1}%
-\contentsline {section}{\numberline {3.}Electrical System}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Control Protocol}{8}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Control Unit: WEMOS D1 R32 (ESP32 based)}{9}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Temperature ana humidity sensor: DHT11}{10}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Distance measurement sensors: HC-SR04}{13}{subsection.3.4}%
-\contentsline {section}{\numberline {4.}Monitoring System}{14}{section.4}%
-\contentsline {section}{\numberline {5.}Etik och Samhälleliga aspekter (Ethical and Societal Considerations)}{15}{section.5}%
-\contentsline {section}{\numberline {6.}``Beskrivning av arbetet''/ ``Description of the work'') }{16}{section.6}%
-\contentsline {section}{\numberline {7.}Resultat (Results)}{17}{section.7}%
-\contentsline {section}{\numberline {8.}Diskussion (Discussion)}{18}{section.8}%
-\contentsline {section}{\numberline {9.}Slutsatser (Conclusions)}{19}{section.9}%
+\contentsline {subsection}{\numberline {1.1}System Architecture }{2}{subsection.1.1}%
+\contentsline {section}{\numberline {2.}Design and Development}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Structure Design Overview}{3}{subsection.2.1}%
+\contentsline {section}{\numberline {3.}Electrical System}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Control Protocol}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Control Unit: WEMOS D1 R32 (ESP32 based)}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Temperature ana humidity sensor: DHT11}{12}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Distance measurement sensors: HC-SR04}{15}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}IMU sensor: MPU 9050}{16}{subsection.3.5}%
+\contentsline {section}{\numberline {4.}Monitoring System}{19}{section.4}%
+\contentsline {section}{\numberline {5.}Etik och Samhälleliga aspekter (Ethical and Societal Considerations)}{20}{section.5}%
+\contentsline {section}{\numberline {6.}``Beskrivning av arbetet''/ ``Description of the work'') }{21}{section.6}%
+\contentsline {section}{\numberline {7.}Resultat (Results)}{22}{section.7}%
+\contentsline {section}{\numberline {8.}Diskussion (Discussion)}{23}{section.8}%
+\contentsline {section}{\numberline {9.}Slutsatser (Conclusions)}{24}{section.9}%

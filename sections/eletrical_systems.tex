@@ -260,15 +260,108 @@ the length of the following high-voltage-level signal determines whether data bi
 
 
 \subsection{Distance measurement sensors: HC-SR04}
+Ultrasonic is an excellent way of figuring out what’s in the immediate vicinity of your Arduino. The basics
+of using ultrasound are like this: you shoot out a sound, wait to hear it echo back, and if you have your
+timing right, you’ll know if anything is out there and how far away it is. This is called echolocation and it’s
+how bats and dolphins find objects in the dark and underwater, though they use lower frequencies than you
+can use with your Arduino.Figure-1 show the working principal of ultrasonic ranging concept.
+
+\vspace{1.5em}
+\href{https://www.handsontec.com/dataspecs/HC-SR04-Ultrasonic.pdf}{HC-SR04} Ultrasonic Sensor is a very affordable proximity/distance sensor that has been used mainly for
+object avoidance in various robotics projects. It has also been used in turret applications, water level sensing,
+and even as a parking sensor.
+This module is the second generation of the popular HC-SR04 Low Cost Ultrasonic Sensor. Unlike the first
+generation HC-SR04 that can only operate between 4.8V~5V DC, the improved version has wider input voltage
+range, allow it to work with controller operates on 3.3V.HC-SR04 ultrasonic sensor provides a very low-cost
+and easy method of distance measurement. It measures distance using sonar, an ultrasonic (well above
+human hearing) pulse (~40KHz) is transmitted from the unit and distance-to-target is determined by
+measuring the time required for the echo return. This sensor offers excellent range accuracy and stable
+readings in an easy-to-use package. An on board 2.54mm pitch pin header allows the sensor to be plugged
+into a solderless breadboard for easy prototyping
 
 
+\textbf{Module specification}
 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/electrical/hc_sr04.png}
+    \caption{HC-SR04 specifications table }
+    \label{fig:hcSr04_specifications}
+\end{figure}
 
 
+The timing diagram, Figure~\ref{fig:hcSr04_schematic_timing}  is shown below. You only need to supply a short 10uS pulse to “Trigger Input”
+pin to start the ranging. The module will send out 8-cycles burst of ultrasound at 40KHz and raise its “Echo” 
+6 pin, refer to Figure~\ref{fig:hcSr04_schematic_mcu}. The echo is a distance object that is pulse width and the range in proportion. You can
+calculate the range through the time interval between sending trigger signal and receiving echo signal.
+Formula: µS / 58 = centimeters or µS / 148 =inch
+or: the range = high level time * sound velocity (340m/s) / 2; 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/electrical_schematics/hcsr04_timing.png}
+    \caption{HC-SR04 timing schematic diagram}
+    \label{fig:hcSr04_schematic_timing}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/electrical_schematics/hcsr04_mcu.png}
+    \caption{HC-SR04 timing schematic diagram}
+    \label{fig:hcSr04_schematic_mcu}
+\end{figure}
 
 
+\subsection{IMU sensor: MPU 9050}
+\par
+The MPU-9250 is a compact 9-axis motion tracking sensor developed by \href{https://invensense.tdk.com/en-us}{TDK InvenSense}. 
+It integrates three sensing components into a single chip:\verb|accelerometer, gyroscope, magnetometer|.
+This module is more superior than older IMU sensor generation like MPU 6050. By integrated 9 axis for 3 sensors in 1 module, it helps
+simplify electrical system while provide the same functions that requires multiple modules. This combination enables full 9 degrees of freedom 
+(9-DoF) motion tracking, making the MPU-9250 suitable for applications requiring orientation, motion detection, and navigation.
 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/electrical_schematics/mpu9250-block-diagram.png}
+    \caption{MPU-9250 block diagram, more information can be found in this \href{https://cdn.sparkfun.com/assets/learn_tutorials/5/5/0/MPU9250REV1.0.pdf}{datasheet}, announced by TDK InvenSense}
+    \label{fig:mpu9250_diagram}
+\end{figure}
+
+
+\textbf{Overview}
+In this part, we not dive into detailed and technical specification, we only focus 3 main general 
+functions are: \textbf{gyroscope, accelerometer and magnetometer}
+
+\vspace{1.5em}
+\par
+The MPU-9250 consists of three independent vibratory MEMS rate gyroscopes, which detect rotation about
+the X-, Y-, and Z- Axes. When the gyros are rotated about any of the sense axes, the Coriolis Effect causes
+a vibration that is detected by a capacitive pickoff. The resulting signal is amplified, demodulated, and filtered
+to produce a voltage that is proportional to the angular rate. This voltage is digitized using individual on-chip
+16-bit Analog-to-Digital Converters (ADCs) to sample each axis. The full-scale range of the gyro sensors
+may be digitally programmed to ±250, ±500, ±1000, or ±2000 degrees per second (dps). The ADC sample
+rate is programmable from 8,000 samples per second, down to 3.9 samples per second, and user-selectable
+low-pass filters enable a wide range of cut-off frequencies.
+
+\vspace{1.5em}
+\par
+The MPU-9250’s 3-Axis accelerometer uses separate proof masses for each axis. Acceleration along a
+particular axis induces displacement on the corresponding proof mass, and capacitive sensors detect the
+displacement differentially. The MPU-9250’s architecture reduces the accelerometers’ susceptibility to
+fabrication variations as well as to thermal drift. When the device is placed on a flat surface, it will measure
+0g on the X- and Y-axes and +1g on the Z-axis. The accelerometers’ scale factor is calibrated at the factory
+and is nominally independent of supply voltage. Each sensor has a dedicated sigma-delta ADC for providing
+digital outputs. The full scale range of the digital output can be adjusted to ±2g, ±4g, ±8g, or ±16g
+
+
+\vspace{1.5em}
+\par 
+The 3-axis magnetometer uses highly sensitive Hall sensor technology. The magnetometer portion of the IC
+incorporates magnetic sensors for detecting terrestrial magnetism in the X-, Y-, and Z- Axes, a sensor driving
+circuit, a signal amplifier chain, and an arithmetic circuit for processing the signal from each sensor. Each
+ADC has a 16-bit resolution and a full scale range of ±4800 µT.
 
 
 

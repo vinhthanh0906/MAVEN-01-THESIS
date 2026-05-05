@@ -11,13 +11,14 @@ of the printing plate area of the Bambu Lab A1 Mini, which is our 3D printer. Du
 PETG is cheaper than PLA and offers higher durability and better heat resistance, but it is harder to print and requires careful storage 
 due to its humidity-sensitive properties.
 
+\vspace{1.5 em}
 \par
 We chose PLA for its easier printing process and better print consistency, which is more suitable for rapid prototyping and iterative design. 
 PETG might be chosen for more specific missions that require higher durability in harsher environments.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/blueprint/maven_01_first_prototype.pdf}
+    \includegraphics[width=0.75\linewidth]{images/blueprint/maven_01_first_prototype.pdf}
     \caption{Blueprint of MAVEN-01 first prototype}
     \label{fig:first_vers_blueprint}
 \end{figure}
@@ -65,7 +66,7 @@ can generate heat which can effect on micro-control board, also not ideal for PL
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
+    \includegraphics[width=0.85\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
     \caption{MAVEN-01 second prototype design using separate chassis with chained tracks (Single motor chassis) }
     \label{fig:chasis_1_engine_blueprint}
 \end{figure}
@@ -78,7 +79,7 @@ The \href{https://www.st.com/resource/en/datasheet/l298.pdf}{L298N} motor driver
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{images/blueprint/chassis_1_engine.pdf}
+    \includegraphics[width=0.92\linewidth]{images/blueprint/chassis_1_engine.pdf}
     \caption{Single motor chassis blueprint for 6V TT gear motor with open surface for motor air cooling }
     \label{fig:chasis_1_engine_blueprint}
 \end{figure}
@@ -103,12 +104,28 @@ attached info motor axises using glue or M2x10 to M2x12 tap screws.
 Passive wheel were design to attach 6700zz bearing for smooth rotation, 6700zz has size of 
 15x10x4MM, mounted and screwed with M5x10 tap screw and M5 nuts as holding reinforcement. 
 \par
-\textbf{Place holder: front wheel 2d cad}
-\vspace{1em}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{images/blueprint/front_wheel_6700zz_bearing_oriented.pdf}
+    \caption{Front wheels with 6700zz bearingblueprint for MAVEN-01}
+    \label{fig:frontwheel_6700zz}
+\end{figure}\vspace{1em}
+
 
 \textbf{Front axis}
-\textbf{Place holder: front axis 2d cad}
+\vspace{1.5em}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{images/blueprint/front-center-axle-m5-bolt_drawing.pdf}
+    \caption{Front axis for front wheels for M5 bolts}
+    \label{fig:frontwheel_axis_m5_bolt}
+\end{figure}\vspace{1em}
 
 
+Front wheels of Maven-01 are designed not to be attached directly to the chassis;
+they will be attached to a front wheel axis. The reason for separating this part from the chassis is that the front wheels are passive, 
+which over time can be abraded. With the front wheels attached to the front axis instead of the chassis, 
+they can be easily changed when worn out,and chassis replacement will not be required. This design will save filament and maintenance time.
 
 
