@@ -3,7 +3,8 @@
 
 \subsection{Structure Design Overview}
 
-\textbf{First Version}
+\subsubsection{First version}
+\par
 
 MAVEN-01 was first designed as a two-tracked, tank-type vehicle platform using two 6V TT gear motors for each track. 
 The size of the rover frame platform is 16.8 × 11 cm. The reason why the first body was small is due to the space limitation 
@@ -60,13 +61,11 @@ can generate heat which can effect on micro-control board, also not ideal for PL
     \caption{Comparison of PLA and PETG for Robotics Prototyping}
 \end{table}
 
-
-
-\textbf{Second Version}
+\subsubsection{Second Version}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
+    \includegraphics[width=0.79\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
     \caption{MAVEN-01 second prototype design using separate chassis with chained tracks (Single motor chassis) }
     \label{fig:chasis_1_engine_blueprint}
 \end{figure}
@@ -91,7 +90,7 @@ The \href{https://www.st.com/resource/en/datasheet/l298.pdf}{L298N} motor driver
     \centering
     \includegraphics[width=0.8\linewidth]{images/blueprint/drive_wheels.pdf}
     \caption{Driver wheels blueprint for MAVEN-01}
-    \label{fig:chasis_1_engine_blueprint}
+    \label{fig:drive_wheels_blueprint}
 \end{figure}
 
 Each TT motor will have two drive wheels act as anchors for track chains attached. Drive wheels can be 
@@ -117,7 +116,7 @@ Passive wheel were design to attach 6700zz bearing for smooth rotation, 6700zz h
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/blueprint/front-center-axle-m5-bolt_drawing.pdf}
+    \includegraphics[width=0.81\linewidth]{images/blueprint/front-center-axle-m5-bolt_drawing.pdf}
     \caption{Front axis for front wheels for M5 bolts}
     \label{fig:frontwheel_axis_m5_bolt}
 \end{figure}\vspace{1em}
@@ -126,6 +125,19 @@ Passive wheel were design to attach 6700zz bearing for smooth rotation, 6700zz h
 Front wheels of Maven-01 are designed not to be attached directly to the chassis;
 they will be attached to a front wheel axis. The reason for separating this part from the chassis is that the front wheels are passive, 
 which over time can be abraded. With the front wheels attached to the front axis instead of the chassis, 
-they can be easily changed when worn out,and chassis replacement will not be required. This design will save filament and maintenance time.
+they can be easily changed when worn out,and chassis replacement will not be required.
 
+
+\textbf{Track chain}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.81\linewidth]{images/blueprint/track_chain.pdf}
+    \caption{Front axis for front wheels for M5 bolts}
+    \label{fig:track_chain_blueprint}
+\end{figure}\vspace{1em}
+\par
+MAVEN-01 uses an assembled chain design. In the first design, it used a rubber chain, 
+but the wobbling axles caused the rubber track to become unstable, which could lead to 
+derailment because there were no stable anchor points for the chain to mount onto both the 
+front wheels and the drive wheels, which solved by this second design.
 

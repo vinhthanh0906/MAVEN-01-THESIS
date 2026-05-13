@@ -6,7 +6,50 @@ with Python. Main features of the system is to monitor sensors data receive from
 battery level and many other features. This system will information intuitively about the condition
 of environments surround the rover which is the main target of MAVEN-01.
 
-\textbf{Demo of MAVEN-01 Monitoring System (MMS)}
-\par 
+\vspace{1.5 em }
+QT framework is flexible framework for making desktop application, compatible with both Python and C++,
+more specific, MMS was using Pyside6, a library that allow users use QT APIS through Python. 
+
+ \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/demo/MMS_1st_vers.png}
+    \caption{Main user interface of MMS first version }
+    \label{fig:mms_ui_demo_1}
+\end{figure}
+
+\textbf(We will talk about this more later)
+
+\subsection{Network communication protocol: MQTT}
+To connect from MMS to the Rover, we use \textbf{MQTT(Messaging Queuing Telemetry Transport)} protocol,
+a lightweight, publish/subscribe network protocol designed for low-bandwidth, unreliable networks and 
+resource-constrained IoT devices. The key aspects oF MQTT is \textbf{publish \& subscribe model}: Clients publish data to a "topic" on a broker,
+and other clients subscribe to that topic to receive the data, decoupling the sender and receiver.MQTT is ideal for remote monitoring,
+as it requires little bandwidth and has a small code footprint.
+ 
+\vspace{1.5em}
+\textbf{MQTT Workflow}
+\par
+
+
+Maven-01’s main goal is to go to hazardous places and collect environmental information such as pressure, temperature, and humidity. Even though the 2.4 GHz Wi-Fi bandwidth is quite large,
+it is not very stable when the rover is covered by obstacles. Therefore, we still need MQTT for low-latency and robust data transmission.
+
+\vspace{1.5 em}
+In the MQTT workflow diagram \ref{fig:mqtt_diagram}, all sensor data are sent to a middle distributor block called the \textbf{Broker},
+which can be related to a simpler example such as \href{https://store.steampowered.com/}{Steam}.
+
+Steam works like a distribution platform for publishing and selling games. 
+All game studios (Sensors) publish their games (sensor data) to Steam (Broker), 
+and we (Subscribers) go to Steam and buy the game (message) by saying, 
+\textit{"I want this game, and I will pay for it."} (subscribe). Then, Steam sends you the message, \textit{"Ok, I got your money. Here is your game."}, along with a copy of the game (payload).
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/diagram/protocol/mqtt_diagram.png}
+    \caption{MQTT workflow diagram}
+    \label{fig:mqtt_diagram}
+\end{figure}
+
 
 
