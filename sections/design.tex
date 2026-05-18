@@ -1,4 +1,4 @@
-\section{Design and Development}
+\section{Mechanical Design}
 \label{sec:background}
 
 \subsection{Structure Design Overview}
@@ -40,32 +40,32 @@ occupy a large space, we can put more components inside base body. During operat
 can generate heat which can effect on micro-control board, also not ideal for PLA body due to not limited heat resistance.
 
 
-\begin{table}[ht]
-    \centering
-    \label{tab:pla_vs_petg}
-    \begin{tabularx}{\textwidth}{@{} l X X @{}}
-        \toprule
-        \textbf{Feature} & \textbf{PLA (Polylactic Acid)} & \textbf{PETG (Polyethylene Terephthalate Glycol)} \\
-        \midrule
-        \textbf{Printability} & Very Easy. Low warping, no enclosure needed. & Moderate. Requires higher temps; prone to stringing. \\
-        \addlinespace
-        \textbf{Strength} & High tensile strength but brittle. & High impact resistance and more flexible. \\
-        \addlinespace
-        \textbf{Temp. Resistance} & Low (softens at ~70°C). Not for hot environments. & Moderate (softens at ~85°C). Better for motors/sunlight. \\
-        \addlinespace
-        \textbf{Durability} & Low. Can degrade outdoors over long periods. & High. UV resistant and chemically stable. \\
-        \addlinespace
-        \textbf{Post-Processing} & Easy to sand and paint. & Difficult to sand due to its "gummy" nature. \\
-        \bottomrule
-    \end{tabularx}
-    \caption{Comparison of PLA and PETG for Robotics Prototyping}
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Feature} & \textbf{PLA} & \textbf{PETG} \\
+\hline
+Printability & Very easy & Moderate \\
+\hline
+Strength & Strong but brittle & Strong and flexible \\
+\hline
+Temp. Resistance & Low ($\sim$70$^\circ$C) & Moderate ($\sim$85$^\circ$C) \\
+\hline
+Durability & Low outdoor durability & High UV resistance \\
+\hline
+Post-Processing & Easy to sand/paint & Harder to sand \\
+\hline
+\end{tabular}
+\caption{Comparison of PLA and PETG specifications}
+\label{tab:pla_vs_petg}
 \end{table}
 
 \subsubsection{Second Version}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.79\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
+    \includegraphics[width=0.95\linewidth]{images/blueprint/Maven-01-2nd-design.pdf}
     \caption{MAVEN-01 second prototype design using separate chassis with chained tracks (Single motor chassis) }
     \label{fig:chasis_1_engine_blueprint}
 \end{figure}
@@ -76,6 +76,7 @@ which allows more space in the base rover body. With the separate track module, 
 The \href{https://www.st.com/resource/en/datasheet/l298.pdf}{L298N} motor driver module and gear motor heating problems are also solved by the open-surface chassis design, which allows open-air ventilation to work as a cooling system.
 
 
+\subsubsection{Chassis design}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.92\linewidth]{images/blueprint/chassis_1_engine.pdf}
@@ -84,7 +85,7 @@ The \href{https://www.st.com/resource/en/datasheet/l298.pdf}{L298N} motor driver
 \end{figure}
 
 \vspace{2em}
-\textbf{Drive wheel design}
+\subsubsection{Drive wheel design}
 
 \begin{figure}[H]
     \centering
@@ -98,25 +99,25 @@ attached info motor axises using glue or M2x10 to M2x12 tap screws.
 
 \vspace{1em}
 
-\textbf{Passive wheel design}
+\subsubsection{Passive wheel design}
 \par
 Passive wheel were design to attach 6700zz bearing for smooth rotation, 6700zz has size of 
 15x10x4MM, mounted and screwed with M5x10 tap screw and M5 nuts as holding reinforcement. 
 \par
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{images/blueprint/front_wheel_6700zz_bearing_oriented.pdf}
+    \includegraphics[width=0.80\linewidth]{images/blueprint/front_wheel_6700zz_bearing_oriented.pdf}
     \caption{Front wheels with 6700zz bearingblueprint for MAVEN-01}
     \label{fig:frontwheel_6700zz}
 \end{figure}\vspace{1em}
 
 
-\textbf{Front axis}
+\subsubsection{Front axis}
 \vspace{1.5em}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.81\linewidth]{images/blueprint/front-center-axle-m5-bolt_drawing.pdf}
+    \includegraphics[width=0.78\linewidth]{images/blueprint/front-center-axle-m5-bolt_drawing.pdf}
     \caption{Front axis for front wheels for M5 bolts}
     \label{fig:frontwheel_axis_m5_bolt}
 \end{figure}\vspace{1em}
@@ -128,10 +129,10 @@ which over time can be abraded. With the front wheels attached to the front axis
 they can be easily changed when worn out,and chassis replacement will not be required.
 
 
-\textbf{Track chain}
+\subsubsection{Track chain}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.81\linewidth]{images/blueprint/track_chain.pdf}
+    \includegraphics[width=0.75\linewidth]{images/blueprint/track_chain.pdf}
     \caption{Front axis for front wheels for M5 bolts}
     \label{fig:track_chain_blueprint}
 \end{figure}\vspace{1em}

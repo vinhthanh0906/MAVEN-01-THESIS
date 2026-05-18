@@ -4,3 +4,38 @@
 Furthermore, in addition to the mechanical frame design, this paper also focuses on the electrical system implemented in the rover. Due to limited budget and time constraints, we selected the popular ESP32 microcontroller, which features built-in Wi-Fi and Bluetooth capabilities for teleoperation purposes. Other components were also carefully chosen to balance performance and cost. For example, the DHT11 or DHT12 sensors are suitable for temperature and humidity measurement, while the HC-SR04 sensor is used for distance measurement.
 The paper also discusses practical challenges, including durability, reliability, and ease of maintenance.
 \end{abstract}
+
+\section{System Requirement \& Testing}
+
+\subsection{Mechanical Design \& Mobility Requirement}
+MAVEN-01 need to be a modular budget friendly 3D printed rover platform for research and educational 
+purpose, easy to maintain.
+
+For mobility, the rover was design to run on flat terrain and power efficient with 2 engine chassis version.
+With 4 motors version, we expect MAVEN-01 has better off-road ability than the 2x4 version.
+
+\subsubsection{Detailed Testing plan}
+
+\begin{itemize}
+    \item Terrain types: Road, glass, off road
+    \item Obstacles height: 3cm \& 5cm 
+\end{itemize}
+
+\subsection{Electrical \& Power Requirement }
+MAVEN-01 was design to have 3 power sources for each modular section like: control board, censors, mobility motors
+for power efficient and easy maintenance. 
+
+\subsubsection{Detailed testing plan}
+\begin{itemize}
+    \item Operation time: 2 hours
+    \item Testing swappable battery 
+\end{itemize}
+
+\subsection{Software \& Control Requirement \& Testing}
+\begin{itemize}
+    \item Verify sensors data with other source: forecast, phone 
+    \item Control latency < 5ms
+\end{itemize}
+
+
+

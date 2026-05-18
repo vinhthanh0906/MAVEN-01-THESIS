@@ -1,4 +1,4 @@
-\section{Electrical System}
+\section{Electrical Design}
 MAVEN-01 is designed to be an affordable autonomous vehicle platform for research and educational purposes, so
 as we chose low range price electrical components but still make sure the rover has solid performance by price.
 
@@ -102,23 +102,30 @@ allowing more sensors to be connected. It is also affordable.
 
 \begin{table}[h]
 \centering
-\begin{tabular}{lcccc}
+\begin{tabular}{|l|c|c|c|}
 \hline
-\textbf{Feature} & \textbf{ESP32} & \textbf{Pico W} & \textbf{ESP8266} & \textbf{UNO R4 WiFi} \\
+\textbf{Feature} & \textbf{ESP32} & \textbf{Pico W} & \textbf{UNO R4} \\
 \hline
-CPU & Dual-core 240 MHz & Dual-core 133 MHz & Single-core 80 MHz & 48 MHz Cortex-M4 \\
-RAM & 520 KB & 264 KB & 160 KB & 32 KB \\
-Flash & 4 MB & 2 MB & 4 MB & 256 KB \\
-WiFi & Yes & Yes & Yes & Yes \\
-Bluetooth & Yes & No & No & No \\
-GPIO & $\sim$30 & 26 & $\sim$17 & 14 \\
-RTOS & Yes (FreeRTOS) & No & No & No \\
-Real-time & Medium & High & Medium & High \\
-Power & Medium & Low & Low & Low \\
-Price (VND) & $\sim$120k & $\sim$180k & $\sim$70k & $\sim$700k--1M \\
+CPU & Dual-core 240 MHz & Dual-core 133 MHz & 48 MHz Cortex-M4 \\
+\hline
+RAM & 520 KB & 264 KB & 32 KB \\
+\hline
+Flash & 4 MB & 2 MB & 256 KB \\
+\hline
+WiFi & Yes & Yes & Yes \\
+\hline
+Bluetooth & Yes & No & No \\
+\hline
+GPIO & $\sim$30 & 26 & 14 \\
+\hline
+RTOS & Yes (FreeRTOS) & No & No \\
+\hline
+Power & Medium & Low & Low \\
+\hline
+Price (VND) & $\sim$120k & $\sim$180k & $\sim$700k--1M \\
 \hline
 \end{tabular}
-\caption{Comparison of ESP32, Pico W, ESP8266, and Arduino UNO R4 WiFi}
+\caption{Comparison of ESP32, Pico W, and Arduino UNO R4 WiFi}
 \end{table}
 
 ESP32 has many variants suitable for specific tasks. 
@@ -363,6 +370,47 @@ The 3-axis magnetometer uses highly sensitive Hall sensor technology. The magnet
 incorporates magnetic sensors for detecting terrestrial magnetism in the X-, Y-, and Z- Axes, a sensor driving
 circuit, a signal amplifier chain, and an arithmetic circuit for processing the signal from each sensor. Each
 ADC has a 16-bit resolution and a full scale range of ±4800 µT.
+
+
+\subsection{Buck converter: LM2596}
+
+Sensors used in MAVEN-01 like MPU, DHT11 work stable at 3.3V, but the power supply provide 6V, which mean if we connect it
+directly to sensors, sensors will be damaged, so we need \href{https://www.ti.com/lit/ds/symlink/lm2596.pdf}{LM2596} 
+to lower the voltage.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/diagram/LM2596.png}
+    \caption{LM2596 block diagram, more information can be found in this \href{https://www.alldatasheet.com/datasheet-pdf/view/543770/TI1/LM2596.html}{datasheet}, announced by Texas Instruments}
+    \label{fig:lm2596_diagram}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/information/lm2596_spec.png}
+    \caption{LM2596 specifications table}
+    \label{fig:lm2596_tables}
+\end{figure}
+
+
+
+\subsection{Power source}
+In Diagram~\ref{fig:maven_01_system_architecture}, MAVEN-01 was designed with three separate power sources. 
+This design lays the groundwork for stable operation and minimizes chain-reaction failures. For instance, if any part of MAVEN-01 fails 
+for any reason, we can easily identify the cause and immediately disconnect the faulty part from the system without shutting down 
+the entire system.
+
+\vspace{1em}
+\par
+For the microcontroller board, we use a 9V box battery since the Wemos D1 R32 board supports a voltage range 
+from 9V to 12V. For all sensors, we use four AA batteries with a total output of 6V, but we use an LM2596 buck converter to reduce the voltage
+to 3.3V in order to avoid damaging the sensors. For the motor power supply, we use two 18650 3.7V batteries with a high current rating of 13A and a total capacity of 5200mAh,
+which is more than enough for 6--8V TT gear motors. However, when MAVEN-01 is upgraded, we will not need to replace the entire power supply system, making it more cost-efficient.
+
+
+
+
 
 
 

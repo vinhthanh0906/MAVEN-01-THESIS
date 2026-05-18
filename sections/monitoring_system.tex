@@ -1,4 +1,5 @@
-\section{Monitoring System} 
+\section{Software Design}
+\subsection{Control and Monitoring system} 
 \label{sec:monitoring}
 
 For the first version of control and monitoring GUI, we will using QT framework 
@@ -19,10 +20,10 @@ more specific, MMS was using Pyside6, a library that allow users use QT APIS thr
 
 \textbf(We will talk about this more later)
 
-\subsection{Network communication protocol: MQTT}
+\subsection{Sensors data transportation protocol: MQTT}
 To connect from MMS to the Rover, we use \textbf{MQTT(Messaging Queuing Telemetry Transport)} protocol,
 a lightweight, publish/subscribe network protocol designed for low-bandwidth, unreliable networks and 
-resource-constrained IoT devices. The key aspects oF MQTT is \textbf{publish \& subscribe model}: Clients publish data to a "topic" on a broker,
+resource-constrained IoT devices. The key aspects oF MQTT is \textbf{publish \& subscribe model}: Clients publish data to \textit{"topic"}  on a broker,
 and other clients subscribe to that topic to receive the data, decoupling the sender and receiver.MQTT is ideal for remote monitoring,
 as it requires little bandwidth and has a small code footprint.
  
@@ -51,5 +52,23 @@ and we (Subscribers) go to Steam and buy the game (message) by saying,
     \label{fig:mqtt_diagram}
 \end{figure}
 
+\subsection{Control Protocol: 2.4 GHz Bandwidth Wifi}
 
+\vspace{1em}
+\par 
+In the previous section, MQTT was discussed as the main protocol used for data transmission. In this section, the focus will be on the control communication protocol used in the MMS for MAVEN-01, which is UDP.
+\vspace{1em}
+If we look deeper into rover systems and many other UGVs (Unmanned Ground Vehicles), low-latency control plays a crucial role in overall performance. In MAVEN-01, Wi-Fi serves as the main communication medium between the rover and the monitoring system, while UDP acts as the constant signal transmission protocol.
 
+\vspace{1em}
+Unlike TCP, which uses a \textit{``make sure the packet is received by the receiver'' mechanism before sending the next packet}, UDP removes this confirmation process and continuously sends signals without waiting for acknowledgment. This significantly reduces latency. For this reason, time-critical systems often prefer UDP over other communication protocols.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{images/diagram/protocol/control.drawio.png}
+    \caption{UDP control workflow diagram}
+    \label{fig:udp_control_diagram}
+\end{figure}
+
+Figure~\ref{fig:udp_control_diagram} illustrates the UDP-based control workflow used in MAVEN-01. The control process begins at the monitoring station, where keyboard inputs are interpreted by the control GUI and transmitted through a UDP socket over a Wi-Fi connection. On the rover side, 
+the UDP receiver obtains the transmitted packets and forwards them to the command parser for decoding. The decoded commands are then sent to the motor driver, which controls the DC motors through PWM and GPIO signals. This workflow enables low-latency communication for real-time rover control.

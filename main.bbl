@@ -148,6 +148,134 @@
       \endverb
       \keyw{computation,cognition,intelligence,turing test,turingmachine,imitation game,mind,consciousness,artificialintelligence,mind modeling,robotics,Loebner Prize,cognitive science,behaviorism,computationalism,cognitivism,functionalism,Church's Thesis}
     \endentry
+    \entry{dht11}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d7f62fb0d8e8b8f34b8058c650831cd}{%
+           family={Aosong\bibnamedelimb Guangzhou\bibnamedelimb Electronics\bibnamedelima Co.},
+           familyi={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ltd},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Handson Tecnology}%
+      }
+      \strng{namehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{fullhash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{fullhashraw}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{bibnamehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authorbibnamehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authornamehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authorfullhash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authorfullhashraw}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Information and specification about DHT11}
+      \field{title}{DHT11 Datasheet}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
+      \endverb
+      \verb{url}
+      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
+      \endverb
+    \endentry
+    \entry{d1_r32}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c1d98d0742bd805448310bd87d076b7e}{%
+           family={Opensource},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Handson Technology}%
+      }
+      \strng{namehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{fullhash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{fullhashraw}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{bibnamehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authorbibnamehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authornamehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authorfullhash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authorfullhashraw}{c1d98d0742bd805448310bd87d076b7e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Wemos D1 R32 Information and Specification}
+      \field{title}{Wemos D1 R32 Datasheet}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://handsontec.com/dataspecs/module/ESP/WeMos%20D1%20R32.pdf
+      \endverb
+      \verb{url}
+      \verb https://handsontec.com/dataspecs/module/ESP/WeMos%20D1%20R32.pdf
+      \endverb
+    \endentry
+    \entry{l298n}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={STMicroelectronics},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Handson Technology}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{L298N Information and Specification}
+      \field{title}{L289N Dual H-Bridge Driver}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.handsontec.com/dataspecs/L298N%20Motor%20Driver.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.handsontec.com/dataspecs/L298N%20Motor%20Driver.pdf
+      \endverb
+    \endentry
+    \entry{lm2596}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
+           family={Instruments},
+           familyi={I\bibinitperiod},
+           given={Texas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Texas Instruments}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{LM2596 Datasheet and Specifications}
+      \field{title}{LM2596 SIMPLE SWITCHER Power Converter 150-kHz 3-A Step-Down Voltage Regulator}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/ds/symlink/lm2596.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/ds/symlink/lm2596.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

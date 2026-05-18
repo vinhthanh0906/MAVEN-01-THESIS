@@ -16,5 +16,234 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Berndtsson607210}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=bf66c6f210df3d91890d08ec34740b62}{%
+           family={Berndtsson},
+           familyi={B\bibinitperiod},
+           given={Mikael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=50702d0f8992a4ecbaedf8ae3d12b059}{%
+           family={Hansson},
+           familyi={H\bibinitperiod},
+           given={Jörgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=82aa1266ac8a6321ff6144b77cdad26e}{%
+           family={Olsson},
+           familyi={O\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fa01beb671cad35fb71763bdb2ffe3fb}{%
+           family={Lundell},
+           familyi={L\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{institution}{3}{%
+        {University of Skövde, School of Humanities}%
+        {Informatics}%
+        {Software Engineering Institute, Carnegie Mellon University, Pittsburgh , PA, USA}%
+      }
+      \list{publisher}{1}{%
+        {Springer, London}%
+      }
+      \strng{namehash}{d52613a53142742cdaac531930ce347f}
+      \strng{fullhash}{be05ea7f43509cf11abc8e87a56d2438}
+      \strng{fullhashraw}{be05ea7f43509cf11abc8e87a56d2438}
+      \strng{bibnamehash}{be05ea7f43509cf11abc8e87a56d2438}
+      \strng{authorbibnamehash}{be05ea7f43509cf11abc8e87a56d2438}
+      \strng{authornamehash}{d52613a53142742cdaac531930ce347f}
+      \strng{authorfullhash}{be05ea7f43509cf11abc8e87a56d2438}
+      \strng{authorfullhashraw}{be05ea7f43509cf11abc8e87a56d2438}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Thesis projects : A guide for students in computer science and information systems}
+      \field{year}{2008}
+      \true{nocite}
+      \field{pages}{158}
+      \range{pages}{1}
+    \endentry
+    \entry{Blomkvist2014}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=defae4c7364fe0f5ff70e40b138a767d}{%
+           family={Blomkvist},
+           familyi={B\bibinitperiod},
+           given={Pär},
+           giveni={P\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=28f8e34dcb93e3c41c2cafc9c6bbb4a4}{%
+           family={Hallin},
+           familyi={H\bibinitperiod},
+           given={Anette},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Lund}%
+      }
+      \list{publisher}{1}{%
+        {Lund : Studentlitteratur}%
+      }
+      \strng{namehash}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{fullhash}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{fullhashraw}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{bibnamehash}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{authorbibnamehash}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{authornamehash}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{authorfullhash}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{authorfullhashraw}{defae4c7364fe0f5ff70e40b138a767d}
+      \strng{editorbibnamehash}{28f8e34dcb93e3c41c2cafc9c6bbb4a4}
+      \strng{editornamehash}{28f8e34dcb93e3c41c2cafc9c6bbb4a4}
+      \strng{editorfullhash}{28f8e34dcb93e3c41c2cafc9c6bbb4a4}
+      \strng{editorfullhashraw}{28f8e34dcb93e3c41c2cafc9c6bbb4a4}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Metod för teknologer : examensarbete enligt 4-fasmodellen}}
+      \field{year}{2014}
+      \true{nocite}
+      \keyw{author\_guidelines,swedish,teaching}
+    \endentry
+    \entry{Turing1950}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=fdc523429c3c89c34880f733033f2099}{%
+           family={Turing},
+           familyi={T\bibinitperiod},
+           given={A.\bibnamedelimi M.},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{fullhash}{fdc523429c3c89c34880f733033f2099}
+      \strng{fullhashraw}{fdc523429c3c89c34880f733033f2099}
+      \strng{bibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorbibnamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authornamehash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorfullhash}{fdc523429c3c89c34880f733033f2099}
+      \strng{authorfullhashraw}{fdc523429c3c89c34880f733033f2099}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I propose to consider the question, "Can machines think?" This should begin with definitions of the meaning of the terms "machine" and "think." The definitions might be framed so as to reflect so far as possible the normal use of the words, but this attitude is dangerous, If the meaning of the words "machine" and "think" are to be found by examining how they are commonly used it is difficult to escape the conclusion that the meaning and the answer to the question, "Can machines think?" is to be sought in a statistical survey such as a Gallup poll. But this is absurd. Instead of attempting such a definition I shall replace the question by another, which is closely related to it and is expressed in relatively unambiguous words. The new form of the problem can be described in terms of a game which we call the 'imitation game." It is played with three people, a man (A), a woman (B), and an interrogator (C) who may be of either sex. The interrogator stays in a room apart front the other two. The object of the game for the interrogator is to determine which of the other two is the man and which is the woman. He knows them by labels X and Y, and at the end of the game he says either "X is A and Y is B" or "X is B and Y is A." The interrogator is allowed to put questions to A and B. We now ask the question, "What will happen when a machine takes the part of A in this game?" Will the interrogator decide wrongly as often when the game is played like this as he does when the game is played between a man and a woman? These questions replace our original, "Can machines think?"}
+      \field{journaltitle}{Mind}
+      \field{note}{One of the most influential papers in the history of the cognitive sciences: http://cogsci.umn.edu/millennium/final.html}
+      \field{title}{Computing Machinery and Intelligence}
+      \field{volume}{59}
+      \field{year}{1950}
+      \true{nocite}
+      \field{pages}{433\bibrangedash 460}
+      \range{pages}{28}
+      \verb{urlraw}
+      \verb http://cogprints.org/499/
+      \endverb
+      \verb{url}
+      \verb http://cogprints.org/499/
+      \endverb
+      \keyw{computation,cognition,intelligence,turing test,turingmachine,imitation game,mind,consciousness,artificialintelligence,mind modeling,robotics,Loebner Prize,cognitive science,behaviorism,computationalism,cognitivism,functionalism,Church's Thesis}
+    \endentry
+    \entry{dht11}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d7f62fb0d8e8b8f34b8058c650831cd}{%
+           family={Aosong\bibnamedelimb Guangzhou\bibnamedelimb Electronics\bibnamedelima Co.},
+           familyi={A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ltd},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Handson Tecnology}%
+      }
+      \strng{namehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{fullhash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{fullhashraw}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{bibnamehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authorbibnamehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authornamehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authorfullhash}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \strng{authorfullhashraw}{5d7f62fb0d8e8b8f34b8058c650831cd}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Information and specification about DHT11}
+      \field{title}{DHT11 Datasheet}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
+      \endverb
+      \verb{url}
+      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
+      \endverb
+    \endentry
+    \entry{d1_r32}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c1d98d0742bd805448310bd87d076b7e}{%
+           family={Opensource},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Handson Technology}%
+      }
+      \strng{namehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{fullhash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{fullhashraw}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{bibnamehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authorbibnamehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authornamehash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authorfullhash}{c1d98d0742bd805448310bd87d076b7e}
+      \strng{authorfullhashraw}{c1d98d0742bd805448310bd87d076b7e}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Wemos D1 R32 Information and Specification}
+      \field{title}{Wemos D1 R32 Datasheet}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://handsontec.com/dataspecs/module/ESP/WeMos%20D1%20R32.pdf
+      \endverb
+      \verb{url}
+      \verb https://handsontec.com/dataspecs/module/ESP/WeMos%20D1%20R32.pdf
+      \endverb
+    \endentry
+    \entry{l298n}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={STMicroelectronics},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Handson Technology}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{L298N Information and Specification}
+      \field{title}{L289N Dual H-Bridge Driver}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.handsontec.com/dataspecs/L298N%20Motor%20Driver.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.handsontec.com/dataspecs/L298N%20Motor%20Driver.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

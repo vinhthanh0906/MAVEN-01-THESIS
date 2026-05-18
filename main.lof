@@ -23,5 +23,8 @@
 \contentsline {figure}{\numberline {22}{\ignorespaces HC-SR04 timing schematic diagram}}{16}{figure.caption.28}%
 \contentsline {figure}{\numberline {23}{\ignorespaces HC-SR04 timing schematic diagram}}{16}{figure.caption.29}%
 \contentsline {figure}{\numberline {24}{\ignorespaces MPU-9250 block diagram, more information can be found in this \href {https://cdn.sparkfun.com/assets/learn_tutorials/5/5/0/MPU9250REV1.0.pdf}{datasheet}, announced by TDK InvenSense}}{17}{figure.caption.30}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Main user interface of MMS first version }}{19}{figure.caption.31}%
-\contentsline {figure}{\numberline {26}{\ignorespaces MQTT workflow diagram}}{20}{figure.caption.32}%
+\contentsline {figure}{\numberline {25}{\ignorespaces LM2596 block diagram, more information can be found in this \href {https://www.alldatasheet.com/datasheet-pdf/view/543770/TI1/LM2596.html}{datasheet}, announced by Texas Instruments}}{18}{figure.caption.31}%
+\contentsline {figure}{\numberline {26}{\ignorespaces LM2596 specifications table}}{18}{figure.caption.32}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Main user interface of MMS first version }}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {28}{\ignorespaces MQTT workflow diagram}}{20}{figure.caption.34}%
+\contentsline {figure}{\numberline {29}{\ignorespaces UDP control workflow diagram}}{21}{figure.caption.35}%
