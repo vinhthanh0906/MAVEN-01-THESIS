@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778814377.27869 "main.bcf" "main.bbl" "main" 1778814618.1404 0
-  "main.bcf" 1778814618.00019 107808 9cf98c656f4180e1e886990bab30626f "pdflatex"
+["biber main"] 1779243448.62724 "main.bcf" "main.bbl" "main" 1779245712.51092 0
+  "main.bcf" 1779245712.38046 107808 9cf98c656f4180e1e886990bab30626f "pdflatex"
   "references.bib" 1778814373.39871 4372 4d63e0046e2d192e93486b894bdcb3f4 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778814614.71446 "/Users/nguyenthanhvinh/Documents/Papers/MAVEN-01-THESIS/main.tex" "main.pdf" "main" 1778814618.1407 0
+["pdflatex"] 1779245709.23378 "/Users/nguyenthanhvinh/Documents/Papers/MAVEN-01-THESIS/main.tex" "main.pdf" "main" 1779245712.51121 0
   "/Users/nguyenthanhvinh/Documents/Papers/MAVEN-01-THESIS/main.tex" 1778813520.48899 2099 5df76f002b2c0655fd396a172ee7a2e1 ""
   "/Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png" 1776234684.96017 350966 dfd3e42e908397a62ad051e416ef36ad ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -189,8 +189,8 @@
   "images/demo/MMS_1st_vers.png" 1778633621.64185 278055 c5cb42dfee1905a5ff3f9866ada257ad ""
   "images/diagram/LM2596.png" 1778812936.52284 159517 45e278863f4db230292a3906c2afa55c ""
   "images/diagram/MAVEN-01-diagram.png" 1777946384.63442 103059 fb99108e25eb4aa1ecfb54ad7c22a88c ""
-  "images/diagram/protocol/control.drawio.png" 1778727212.04041 47572 a8cf77d5634172e56142f85f1f031f88 ""
-  "images/diagram/protocol/mqtt_diagram.png" 1778634223.81582 203059 a88ed23c3e17d4d0b4ddb009b9147f24 ""
+  "images/diagram/protocol/control.drawio_new.png" 1779244449.07181 32214 f8eb42f15d8e76be4500597c0de14fd6 ""
+  "images/diagram/sensors_data_udp.png" 1779244024.56186 28106 3ba0a555101e864b81521b60c1ec9759 ""
   "images/diagram/tt_motor_l298.png" 1776651853.12221 50344 777e0b327ce597ba37f64a8f15e4790c ""
   "images/electrical/d1_r32.png" 1776651722.31742 406521 85e00c414220512ce249ff5a45e406ae ""
   "images/electrical/hc_sr04.png" 1776737411.79459 83799 8b5c3a0227cd9dc871f2a3cb3f26db88 ""
@@ -209,19 +209,19 @@
   "images/logo.eps" 1776651722.32607 4381094 ab48dc3a80cb9ad9e957c740185ae05e ""
   "images/rover_reference /curiosity.png" 1776651722.33256 1746816 df16c4bc4ec163e4a499ddf544b0e422 ""
   "images/rover_reference /opportunity.jpg" 1776651722.33482 1592257 4b912dd2fb4b4875fed3ad5e11e4d075 ""
-  "main.aux" 1778814617.99517 15404 e279480f176fa3454b21f9502206ea07 "pdflatex"
-  "main.bbl" 1778814378.50259 13136 e7360ac6c993d77ceb68970c9ee19e74 "biber main"
-  "main.lof" 1778814618.00119 4272 26c40bc85cfb1f52aada2980e93083a4 "pdflatex"
-  "main.lot" 1778814618.00124 277 69c648e27952e6430a9dd9fce1a9eaa7 "pdflatex"
-  "main.run.xml" 1778814618.00106 2464 049e271447fc99698a483580e7e315d4 "pdflatex"
+  "main.aux" 1779245712.3756 15708 701de1bc66e3680b2a9b320fcb24a314 "pdflatex"
+  "main.bbl" 1779243449.87898 13136 e7360ac6c993d77ceb68970c9ee19e74 "biber main"
+  "main.lof" 1779245712.38119 4294 411519a8aca5ee01a6168562b51eb776 "pdflatex"
+  "main.lot" 1779245712.38128 277 69c648e27952e6430a9dd9fce1a9eaa7 "pdflatex"
+  "main.run.xml" 1779245712.38108 2464 049e271447fc99698a483580e7e315d4 "pdflatex"
   "main.tex" 1778813520.48899 2099 5df76f002b2c0655fd396a172ee7a2e1 ""
-  "main.toc" 1778814618.00116 2896 3e39eca76d54f360e8cf0cce6c07e4d3 "pdflatex"
-  "sections/abstract.tex" 1778809461.44619 2257 205be286d8b0893e6826478e791a0f2a ""
-  "sections/conclusions.tex" 1778813850.60236 50 b1c16bcb978da3778fdcd7d4fe73d270 ""
+  "main.toc" 1779245712.38116 3068 c498d4c6d63d253733856031d2f9427a "pdflatex"
+  "sections/abstract.tex" 1779240177.65212 2201 e6fe34e17cd39cf310d78d89f4ce7a8b ""
+  "sections/conclusions.tex" 1779067669.9493 984 6b86e818ed4164bf74a0ed2bf2bed5dd ""
   "sections/design.tex" 1778814205.82191 6118 db33740abe03382083861913f47fcc54 ""
-  "sections/eletrical_systems.tex" 1778814614.49585 20050 b652eb34f40b69c5aa28e9a158f49857 ""
+  "sections/eletrical_systems.tex" 1779244980.31321 20050 22a1f8029ca7ddaad794a9f6bcdb0589 ""
   "sections/introduction.tex" 1778807218.70864 3126 798cac8abb7f26bb0f12bcf882feda20 ""
-  "sections/monitoring_system.tex" 1778806148.98934 4558 9a9fee23824ecf54af739d9ff56cda6d ""
+  "sections/monitoring_system.tex" 1779245708.96473 4946 3c0c9ee12bbfeb4aa3007a40725d5b10 ""
   "thesisMDH.cls" 1776651722.34519 6644 8e9d76c3ce1290b049fbf94ff5b511e3 ""
   (generated)
   "main.aux"

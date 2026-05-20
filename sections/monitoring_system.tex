@@ -8,7 +8,7 @@ battery level and many other features. This system will information intuitively 
 of environments surround the rover which is the main target of MAVEN-01.
 
 \vspace{1.5 em }
-QT framework is flexible framework for making desktop application, compatible with both Python and C++,
+\href{https://www.qt.io/development/qt-framework}{QT framework} is flexible framework for making desktop application, compatible with both Python and C++,
 more specific, MMS was using Pyside6, a library that allow users use QT APIS through Python. 
 
  \begin{figure}[H]
@@ -18,57 +18,53 @@ more specific, MMS was using Pyside6, a library that allow users use QT APIS thr
     \label{fig:mms_ui_demo_1}
 \end{figure}
 
-\textbf(We will talk about this more later)
 
-\subsection{Sensors data transportation protocol: MQTT}
-To connect from MMS to the Rover, we use \textbf{MQTT(Messaging Queuing Telemetry Transport)} protocol,
-a lightweight, publish/subscribe network protocol designed for low-bandwidth, unreliable networks and 
-resource-constrained IoT devices. The key aspects oF MQTT is \textbf{publish \& subscribe model}: Clients publish data to \textit{"topic"}  on a broker,
-and other clients subscribe to that topic to receive the data, decoupling the sender and receiver.MQTT is ideal for remote monitoring,
-as it requires little bandwidth and has a small code footprint.
- 
-\vspace{1.5em}
-\textbf{MQTT Workflow}
+\subsection{Sensors data transportation protocol: Wifi + UDP}
+\par
+To connect from MMS to the Rover, we use Wifi \& UDP based protocol,
+a lightweight, low latency network protocol designed for low-bandwidth, unreliable networks and 
+resource-constrained IoT devices. Maven-01’s main goal is to go to hazardous places and collect environmental information such as pressure, 
+temperature, and humidity. Even though the 2.4 GHz Wi-Fi bandwidth is quite large,it is not very stable when the rover is covered by obstacles.
+Therefore, we still need UDP for low-latency and robust data transmission.
+
 \par
 
-
-Maven-01’s main goal is to go to hazardous places and collect environmental information such as pressure, temperature, and humidity. Even though the 2.4 GHz Wi-Fi bandwidth is quite large,
-it is not very stable when the rover is covered by obstacles. Therefore, we still need MQTT for low-latency and robust data transmission.
-
+The WEMOS D1 R32 module creates a local 2.4 GHz Wi-Fi network to establish wireless communication between the rover and the MMS control system. 
+Through this connection, control commands and telemetry data are transmitted simultaneously using UDP packets formatted in JSON.
 \vspace{1.5 em}
-In the MQTT workflow diagram \ref{fig:mqtt_diagram}, all sensor data are sent to a middle distributor block called the \textbf{Broker},
-which can be related to a simpler example such as \href{https://store.steampowered.com/}{Steam}.
-
-Steam works like a distribution platform for publishing and selling games. 
-All game studios (Sensors) publish their games (sensor data) to Steam (Broker), 
-and we (Subscribers) go to Steam and buy the game (message) by saying, 
-\textit{"I want this game, and I will pay for it."} (subscribe). Then, Steam sends you the message, \textit{"Ok, I got your money. Here is your game."}, along with a copy of the game (payload).
-
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{images/diagram/protocol/mqtt_diagram.png}
-    \caption{MQTT workflow diagram}
-    \label{fig:mqtt_diagram}
+    \includegraphics[width=0.7\linewidth]{images/diagram/sensors_data_udp.png}
+    \caption{Sensor data transportation workflow diagram}
+    \label{fig:udp_sensor_diagram}
 \end{figure}
+
 
 \subsection{Control Protocol: 2.4 GHz Bandwidth Wifi}
 
 \vspace{1em}
 \par 
-In the previous section, MQTT was discussed as the main protocol used for data transmission. In this section, the focus will be on the control communication protocol used in the MMS for MAVEN-01, which is UDP.
+In the previous section, Wifi \& UDP based protocol was discussed as the main protocol used for data transportation, the control communication protocol used in the MMS for MAVEN-01 was the same to it.
 \vspace{1em}
-If we look deeper into rover systems and many other UGVs (Unmanned Ground Vehicles), low-latency control plays a crucial role in overall performance. In MAVEN-01, Wi-Fi serves as the main communication medium between the rover and the monitoring system, while UDP acts as the constant signal transmission protocol.
+If we look deeper into rover systems and many other UGVs (Unmanned Ground Vehicles), low-latency control plays a crucial role in overall performance. In MAVEN-01, Wi-Fi serves as the main communication protocol between the rover and the monitoring system, while UDP acts as the constant signal transmission protocol.
 
-\vspace{1em}
-Unlike TCP, which uses a \textit{``make sure the packet is received by the receiver'' mechanism before sending the next packet}, UDP removes this confirmation process and continuously sends signals without waiting for acknowledgment. This significantly reduces latency. For this reason, time-critical systems often prefer UDP over other communication protocols.
+\vspace{1.5em}
+Unlike TCP, which uses a \textit{``make sure the packet is received by the receiver''} mechanism before sending the next packet, UDP removes this confirmation process and continuously sends signals without waiting for acknowledgment. This significantly reduces latency. For this reason, time-critical systems often prefer UDP over other communication protocols.
 
+However, one problem we had to deal with was that the control signals and sensor data might conflict with each other during transmission. To avoid this issue, we set the sending frequency of the control signals higher than the sensor data transmission frequency. This works similarly to two cars not driving parallel to each other on the same road, helping to reduce communication interference and improve the response speed of the rover control system.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{images/diagram/protocol/control.drawio.png}
+    \includegraphics[width=\linewidth]{images/diagram/protocol/control.drawio_new.png}
     \caption{UDP control workflow diagram}
     \label{fig:udp_control_diagram}
 \end{figure}
 
+
 Figure~\ref{fig:udp_control_diagram} illustrates the UDP-based control workflow used in MAVEN-01. The control process begins at the monitoring station, where keyboard inputs are interpreted by the control GUI and transmitted through a UDP socket over a Wi-Fi connection. On the rover side, 
-the UDP receiver obtains the transmitted packets and forwards them to the command parser for decoding. The decoded commands are then sent to the motor driver, which controls the DC motors through PWM and GPIO signals. This workflow enables low-latency communication for real-time rover control.
+the UDP receiver obtains the transmitted packets and forwards them to the command parser for decoding.The decoded commands are then sent to the motor driver, which controls the DC motors through PWM and GPIO signals. This workflow enables low-latency communication for real-time rover control.
+
+\vspace{1em}
+During the development and testing phase, MAVEN-01 experienced some issues with connection and signal transport latency. When the WEMOS D1 R32 broadcasts a Wi-Fi signal, by default,
+if it does not receive a control signal sent from the control system, it automatically turns off the Wi-Fi module for a very short time to save energy. To solve this problem, we had to turn off the power-saving mode and allow the board to 
+broadcast Wi-Fi continuously at all times. However, the trade-off is that the system becomes more power-hungry, so we need a stable and high-capacity power supply for MAVEN-01 to operate properly, which is already mentioned in Section 4.7.

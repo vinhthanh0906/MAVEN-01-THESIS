@@ -243,6 +243,39 @@
       \verb https://www.handsontec.com/dataspecs/L298N%20Motor%20Driver.pdf
       \endverb
     \endentry
+    \entry{lm2596}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
+           family={Instruments},
+           familyi={I\bibinitperiod},
+           given={Texas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Texas Instruments}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{LM2596 Datasheet and Specifications}
+      \field{title}{LM2596 SIMPLE SWITCHER Power Converter 150-kHz 3-A Step-Down Voltage Regulator}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/ds/symlink/lm2596.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/ds/symlink/lm2596.pdf
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
