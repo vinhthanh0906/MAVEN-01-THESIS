@@ -31,6 +31,8 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}First version}{3}{subsubsection.3.1.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Blueprint of MAVEN-01 first prototype}}{3}{figure.caption.7}\protected@file@percent }
 \newlabel{fig:first_vers_blueprint}{{3}{3}{Blueprint of MAVEN-01 first prototype}{figure.caption.7}{}}
+\abx@aux@cite{0}{TankTrack2024}
+\abx@aux@segm{0}{0}{TankTrack2024}
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Comparison of PLA and PETG specifications}}{4}{table.caption.8}\protected@file@percent }
 \newlabel{tab:pla_vs_petg}{{1}{4}{Comparison of PLA and PETG specifications}{table.caption.8}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Second Version}{4}{subsubsection.3.1.2}\protected@file@percent }
@@ -54,6 +56,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {4.}Electrical Design}{8}{section.4}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Diagram of connections between L289N with 2 6V TT gear motors}}{8}{figure.caption.15}\protected@file@percent }
 \newlabel{fig:l298n_2_motors}{{10}{8}{Diagram of connections between L289N with 2 6V TT gear motors}{figure.caption.15}{}}
+\newlabel{eq:ohmslaw}{{1}{8}{Electrical Design}{equation.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces L298N H-bridge DC motor driver }}{9}{figure.caption.16}\protected@file@percent }
 \newlabel{fig:l298n_image}{{11}{9}{L298N H-bridge DC motor driver}{figure.caption.16}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Schematic Diagram of L298N H-bridge DC motor driver }}{9}{figure.caption.17}\protected@file@percent }
@@ -65,7 +68,7 @@
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Comparison of ESP32, Pico W, and Arduino UNO R4 WiFi}}{11}{table.caption.19}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Wemos D1 R32 pins maps, more information about detailed pinout description in \href  {https://documentation.espressif.com/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}{here}}}{11}{figure.caption.20}\protected@file@percent }
 \newlabel{fig:chasis_1_engine_blueprint}{{14}{11}{Wemos D1 R32 pins maps, more information about detailed pinout description in \href {https://documentation.espressif.com/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf}{here}}{figure.caption.20}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Temperature ana humidity sensor: DHT11}{12}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Temperature and humidity sensor: DHT11}{12}{subsection.4.3}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces DHT11 detailed specifications table, more information in \href  {https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOoo4KPsepnO3XUCcgH6oYdE1Du44-sTxlVKOcYUqFeMKRha0P2Xu}{here} }}{12}{figure.caption.21}\protected@file@percent }
 \newlabel{fig:dht11_spec_table}{{15}{12}{DHT11 detailed specifications table, more information in \href {https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOoo4KPsepnO3XUCcgH6oYdE1Du44-sTxlVKOcYUqFeMKRha0P2Xu}{here}}{figure.caption.21}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Detailed DHT 11 communication signal figure with MCU }}{13}{figure.caption.22}\protected@file@percent }
@@ -93,30 +96,53 @@
 \newlabel{fig:lm2596_diagram}{{25}{18}{LM2596 block diagram, more information can be found in this \href {https://www.alldatasheet.com/datasheet-pdf/view/543770/TI1/LM2596.html}{datasheet}, announced by Texas Instruments}{figure.caption.31}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {26}{\ignorespaces LM2596 specifications table}}{18}{figure.caption.32}\protected@file@percent }
 \newlabel{fig:lm2596_tables}{{26}{18}{LM2596 specifications table}{figure.caption.32}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Power source}{19}{subsection.4.7}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.}Software Design}{19}{section.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Control and Monitoring system}{19}{subsection.5.1}\protected@file@percent }
-\newlabel{sec:monitoring}{{5.1}{19}{Control and Monitoring system}{subsection.5.1}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Main user interface of MMS first version }}{19}{figure.caption.33}\protected@file@percent }
-\newlabel{fig:mms_ui_demo_1}{{27}{19}{Main user interface of MMS first version}{figure.caption.33}{}}
+\abx@aux@cite{0}{max17043}
+\abx@aux@segm{0}{0}{max17043}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Current and voltage sensor: INA 219}{19}{subsection.4.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {27}{\ignorespaces Simplified INA219 Schematic, more information can be found in this \href  {https://www.ti.com/lit/ds/symlink/ina219.pdf}{datasheet}}}{19}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:ina219_schematic}{{27}{19}{Simplified INA219 Schematic, more information can be found in this \href {https://www.ti.com/lit/ds/symlink/ina219.pdf}{datasheet}}{figure.caption.33}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces INA219 Specification table, it provide working current and voltage and the electrical limitations to prevent sensors damaged }}{19}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:ina219_specification}{{28}{19}{INA219 Specification table, it provide working current and voltage and the electrical limitations to prevent sensors damaged}{figure.caption.34}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.8}Power source}{19}{subsection.4.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.}Software Design}{20}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Control and Monitoring system}{20}{subsection.5.1}\protected@file@percent }
+\newlabel{sec:monitoring}{{5.1}{20}{Control and Monitoring system}{subsection.5.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces Main user interface of MMS first version }}{20}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:mms_ui_demo_1}{{29}{20}{Main user interface of MMS first version}{figure.caption.35}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Sensors data transportation protocol: Wifi + UDP}{20}{subsection.5.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {28}{\ignorespaces Sensor data transportation workflow diagram}}{20}{figure.caption.34}\protected@file@percent }
-\newlabel{fig:udp_sensor_diagram}{{28}{20}{Sensor data transportation workflow diagram}{figure.caption.34}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Control Protocol: 2.4 GHz Bandwidth Wifi}{20}{subsection.5.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {29}{\ignorespaces UDP control workflow diagram}}{21}{figure.caption.35}\protected@file@percent }
-\newlabel{fig:udp_control_diagram}{{29}{21}{UDP control workflow diagram}{figure.caption.35}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.}Testing}{22}{section.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Operation testing}{22}{subsection.6.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Maintenance testing}{22}{subsection.6.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7.}Acknowledgments}{22}{section.7}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {30}{\ignorespaces Sensor data transportation workflow diagram}}{21}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:udp_sensor_diagram}{{30}{21}{Sensor data transportation workflow diagram}{figure.caption.36}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Control Protocol: 2.4 GHz Bandwidth Wifi}{21}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {31}{\ignorespaces UDP control workflow diagram}}{22}{figure.caption.37}\protected@file@percent }
+\newlabel{fig:udp_control_diagram}{{31}{22}{UDP control workflow diagram}{figure.caption.37}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.}Testing}{23}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.}Future Work}{23}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8.}Acknowledge}{23}{section.8}\protected@file@percent }
 \abx@aux@nociteall
-\@writefile{toc}{\contentsline {section}{References}{23}{section*.36}\protected@file@percent }
-\abx@aux@read@bbl@mdfivesum{E7360AC6C993D77CEB68970C9EE19E74}
+\@writefile{toc}{\contentsline {section}{References}{25}{section*.38}\protected@file@percent }
+\abx@aux@read@bbl@mdfivesum{0E180670D359EA721C2FE9708E590708}
+\abx@aux@defaultrefcontext{0}{TankTrack2024}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{max17043}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Berndtsson607210}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{Blomkvist2014}{none/global//global/global/global}
-\abx@aux@defaultrefcontext{0}{Turing1950}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{Mohan2003}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{Rashid2013}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{dht11}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{d1_r32}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{l298n}{none/global//global/global/global}
 \abx@aux@defaultrefcontext{0}{lm2596}{none/global//global/global/global}
-\gdef \@abspage@last{27}
+\abx@aux@defaultrefcontext{0}{aht20}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{mpu6500}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{ina219}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{TankPlatform2024}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{curiosity}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{perseverance}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{IEEE2025}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{FrancisPress2024}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{Volpe1999}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{Intermodalics2024}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{Arxiv2024}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{IEEERepeat2025}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{Bohrium2023}{none/global//global/global/global}
+\abx@aux@defaultrefcontext{0}{Dergipark2024}{none/global//global/global/global}
+\gdef \@abspage@last{29}

@@ -501,6 +501,16 @@ INPUT ./images/information/lm2596_spec.png
 INPUT ./images/information/lm2596_spec.png
 INPUT ./images/information/lm2596_spec.png
 INPUT ./images/information/lm2596_spec.png
+INPUT ./images/electrical_schematics/ina129_schematic.png
+INPUT ./images/electrical_schematics/ina129_schematic.png
+INPUT ./images/electrical_schematics/ina129_schematic.png
+INPUT ./images/electrical_schematics/ina129_schematic.png
+INPUT ./images/electrical_schematics/ina129_schematic.png
+INPUT ./images/information/ina219_spec.png
+INPUT ./images/information/ina219_spec.png
+INPUT ./images/information/ina219_spec.png
+INPUT ./images/information/ina219_spec.png
+INPUT ./images/information/ina219_spec.png
 INPUT ./sections/monitoring_system.tex
 INPUT ./sections/monitoring_system.tex
 INPUT sections/monitoring_system.tex

@@ -45,13 +45,15 @@ Through this connection, control commands and telemetry data are transmitted sim
 
 \vspace{1em}
 \par 
-In the previous section, Wifi \& UDP based protocol was discussed as the main protocol used for data transportation, the control communication protocol used in the MMS for MAVEN-01 was the same to it.
-\vspace{1em}
-If we look deeper into rover systems and many other UGVs (Unmanned Ground Vehicles), low-latency control plays a crucial role in overall performance. In MAVEN-01, Wi-Fi serves as the main communication protocol between the rover and the monitoring system, while UDP acts as the constant signal transmission protocol.
+In the previous section, Wifi \& UDP based protocol was discussed as the main protocol used for data transportation, the control communication protocol 
+used in the MMS for MAVEN-01 was the same to it. If we look deeper into rover systems and many other UGVs (Unmanned Ground Vehicles), low-latency control
+plays a crucial role in overall performance. In MAVEN-01, Wi-Fi serves as the main communication protocol between the rover and the monitoring system, while 
+UDP acts as the constant signal transmission protocol.
 
 \vspace{1.5em}
 Unlike TCP, which uses a \textit{``make sure the packet is received by the receiver''} mechanism before sending the next packet, UDP removes this confirmation process and continuously sends signals without waiting for acknowledgment. This significantly reduces latency. For this reason, time-critical systems often prefer UDP over other communication protocols.
 
+\vspace{1em}
 However, one problem we had to deal with was that the control signals and sensor data might conflict with each other during transmission. To avoid this issue, we set the sending frequency of the control signals higher than the sensor data transmission frequency. This works similarly to two cars not driving parallel to each other on the same road, helping to reduce communication interference and improve the response speed of the rover control system.
 \begin{figure}[H]
     \centering

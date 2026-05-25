@@ -71,15 +71,16 @@ Post-Processing & Easy to sand/paint & Harder to sand \\
 \end{figure}
 
 \par
-In this version, we improve the design completely to fix the disadvantages of the first design. We move the track system into a separate module,
+In this version, we improve the design  completely to fix the disadvantages of the first design. We move the track system into a separate module,
 which allows more space in the base rover body. With the separate track module, the ground clearance can be higher, allowing MAVEN-01 to adapt to different terrain types and rough surfaces.
 The \href{https://www.st.com/resource/en/datasheet/l298.pdf}{L298N} motor driver module and gear motor heating problems are also solved by the open-surface chassis design, which allows open-air ventilation to work as a cooling system.
+My design inspired by \cite{TankTrack2024} but with some modified for better upgrade in the future.
 
 
 \subsubsection{Chassis design}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.92\linewidth]{images/blueprint/chassis_1_engine.pdf}
+    \includegraphics[width=0.9\linewidth]{images/blueprint/chassis_1_engine.pdf}
     \caption{Single motor chassis blueprint for 6V TT gear motor with open surface for motor air cooling }
     \label{fig:chasis_1_engine_blueprint}
 \end{figure}
@@ -122,7 +123,7 @@ Passive wheel were design to attach 6700zz bearing for smooth rotation, 6700zz h
     \label{fig:frontwheel_axis_m5_bolt}
 \end{figure}\vspace{1em}
 
-
+\par
 Front wheels of Maven-01 are designed not to be attached directly to the chassis;
 they will be attached to a front wheel axis. The reason for separating this part from the chassis is that the front wheels are passive, 
 which over time can be abraded. With the front wheels attached to the front axis instead of the chassis, 

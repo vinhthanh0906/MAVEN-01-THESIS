@@ -4,18 +4,47 @@ different types of terrain. Furthermore, the electrical system will also be eval
 Sensor data will be checked to see how well the sensors capture data from the environment and how accurate the data are. Lastly, 
 we will carry out the maintenance process to test how easy MAVEN-01 is to maintain, replace components, and recharge power.
 
-\subsection{Operation testing}
-
-
-\textbf{Placeholder for real testing }
-
-
-\subsection{Maintenance testing}
+\vspace{1em}
+\par
+The Wemos D1 R32 board can broadcast its own Wi-Fi, and we can connect to it using a password. During testing, the sensor data sent
+to the control system and displayed on the control system monitor was quite accurate based on two references: the weather app on iOS 
+and a home temperature and humidity meter.
+\par
+\vspace{0.5em}
 Because of the 3-power-supply system, MAVEN-01 is very easy to maintain. 
-If any components, such as sensors or the control board, run out of power or fail,
+If any components, such as sensors or the control board, run out of power or fail, 
 we can easily change the battery corresponding to that component without shutting down the whole system. 
 It is also not hard to find the source of failure due to the modular structure.
 
+\vspace{0.5em}
+\par
+We only equipped one INA219 current sensor to measure the current and voltage 
+of the power source that powers the controller board because of pin limitations, and 
+the other components are less sensitive to power loss than the control board, which is the most important component 
+in the rover. The working voltage range of the control board power source is between 9V and 7.4V. When the voltage reaches around 7.5V , we consider the 
+battery to be almost depleted and in need of recharging or replacement to prevent electrical component failures.
 
+\vspace{0.5em}
+\par 
+Most of the sensors run at 3.3V, so we power them with a separate power source. We use four 1.5V AA batteries through 
+a buck converter to obtain a 3.3V output, and the batteries can also be replaced easily. For the motor power source, 18650 batteries with 
+high power capacity are a good choice for longer operation time.
 
-\section{Acknowledgments}
+\section{Future Work}
+\par
+Since MAVEN-01 was created for research and educational purposes, it can be modified or 
+improved in many different ways. I am a Data Science major student, so in the future I may implement 
+reinforcement learning or an AI system on edge devices such as Orin or DGX, which could make MAVEN-01, or perhaps MAVEN-02 or MAVEN-03, operate autonomously 
+without human control. This is a high-potential project that can provide me personally, as well as many other students 
+or researchers, with experience and knowledge in the fields of robotics and AI.
+
+\vspace{0.5em}
+\par 
+The materials can also be innovated and upgraded. For this very first version, I used PLA because it is cheap 
+and easy to process, but its durability and flexibility cannot be compared to advanced filaments such as Nylon-CF or 
+PETG-CF, etc. MAVEN has a modular structure, so it can be upgraded part by part, making it suitable for a tight budget.
+
+\section{Acknowledge}
+
+I would like to express my sincere gratitude to my supervisor PhD. Pham Xuan Tung for the guidance, support, and encouragement throughout this project. 
+Your valuable knowledge and patience helped me complete this work successfully. I truly appreciate the time and effort you dedicated to helping me learn and improve.
