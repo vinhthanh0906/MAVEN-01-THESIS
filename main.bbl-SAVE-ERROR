@@ -19,6 +19,62 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global/global}
+    \entry{TankTrack2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c1a69b8bd48647d265229984d825c98}{%
+           family={usertogo},
+           familyi={u\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c1a69b8bd48647d265229984d825c98}
+      \strng{fullhash}{2c1a69b8bd48647d265229984d825c98}
+      \strng{fullhashraw}{2c1a69b8bd48647d265229984d825c98}
+      \strng{bibnamehash}{2c1a69b8bd48647d265229984d825c98}
+      \strng{authorbibnamehash}{2c1a69b8bd48647d265229984d825c98}
+      \strng{authornamehash}{2c1a69b8bd48647d265229984d825c98}
+      \strng{authorfullhash}{2c1a69b8bd48647d265229984d825c98}
+      \strng{authorfullhashraw}{2c1a69b8bd48647d265229984d825c98}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.printables.com/model/123883-tank-track-print-in-place-fully-parametric-with-mo}}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Tank Track Print-in-Place Fully Parametric with Motor}}
+      \field{year}{2024}
+    \endentry
+    \entry{max17043}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c4e4a40d251ae6c4d2544a70945bc176}{%
+           family={Analog\bibnamedelima Devices},
+           familyi={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Analog Devices}%
+      }
+      \strng{namehash}{c4e4a40d251ae6c4d2544a70945bc176}
+      \strng{fullhash}{c4e4a40d251ae6c4d2544a70945bc176}
+      \strng{fullhashraw}{c4e4a40d251ae6c4d2544a70945bc176}
+      \strng{bibnamehash}{c4e4a40d251ae6c4d2544a70945bc176}
+      \strng{authorbibnamehash}{c4e4a40d251ae6c4d2544a70945bc176}
+      \strng{authornamehash}{c4e4a40d251ae6c4d2544a70945bc176}
+      \strng{authorfullhash}{c4e4a40d251ae6c4d2544a70945bc176}
+      \strng{authorfullhashraw}{c4e4a40d251ae6c4d2544a70945bc176}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-05-25}
+      \field{title}{MAX17043/MAX17044 1S Fuel Gauges for Lithium-Ion (Li+) Batteries Datasheet}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.analog.com/en/products/max17043.html#documentation
+      \endverb
+      \verb{url}
+      \verb https://www.analog.com/en/products/max17043.html#documentation
+      \endverb
+    \endentry
     \entry{Berndtsson607210}{book}{}{}
       \name{author}{4}{}{%
         {{hash=bf66c6f210df3d91890d08ec34740b62}{%
@@ -58,8 +114,8 @@
       \strng{authornamehash}{d52613a53142742cdaac531930ce347f}
       \strng{authorfullhash}{be05ea7f43509cf11abc8e87a56d2438}
       \strng{authorfullhashraw}{be05ea7f43509cf11abc8e87a56d2438}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{2}
@@ -102,8 +158,8 @@
       \strng{editornamehash}{28f8e34dcb93e3c41c2cafc9c6bbb4a4}
       \strng{editorfullhash}{28f8e34dcb93e3c41c2cafc9c6bbb4a4}
       \strng{editorfullhashraw}{28f8e34dcb93e3c41c2cafc9c6bbb4a4}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{Metod för teknologer : examensarbete enligt 4-fasmodellen}}
@@ -111,42 +167,77 @@
       \true{nocite}
       \keyw{author\_guidelines,swedish,teaching}
     \endentry
-    \entry{Turing1950}{misc}{}{}
-      \name{author}{1}{}{%
-        {{hash=fdc523429c3c89c34880f733033f2099}{%
-           family={Turing},
-           familyi={T\bibinitperiod},
-           given={A.\bibnamedelimi M.},
-           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+    \entry{Mohan2003}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=2b9df3470c2be813c1a89fabe9cf4a81}{%
+           family={Mohan},
+           familyi={M\bibinitperiod},
+           given={Ned},
+           giveni={N\bibinitperiod}}}%
+        {{hash=14e04317b160c3524ba9016cccd2c44e}{%
+           family={Undeland},
+           familyi={U\bibinitperiod},
+           given={Tore\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=099138e21a50455a56f58cfbb7ad0c2d}{%
+           family={Robbins},
+           familyi={R\bibinitperiod},
+           given={William\bibnamedelima P.},
+           giveni={W\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
       }
-      \strng{namehash}{fdc523429c3c89c34880f733033f2099}
-      \strng{fullhash}{fdc523429c3c89c34880f733033f2099}
-      \strng{fullhashraw}{fdc523429c3c89c34880f733033f2099}
-      \strng{bibnamehash}{fdc523429c3c89c34880f733033f2099}
-      \strng{authorbibnamehash}{fdc523429c3c89c34880f733033f2099}
-      \strng{authornamehash}{fdc523429c3c89c34880f733033f2099}
-      \strng{authorfullhash}{fdc523429c3c89c34880f733033f2099}
-      \strng{authorfullhashraw}{fdc523429c3c89c34880f733033f2099}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \list{location}{1}{%
+        {Hoboken, NJ}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{0567289e4b8e418202696b255b0fb19e}
+      \strng{fullhash}{f956a1125100e00f92da68fc297e47e0}
+      \strng{fullhashraw}{f956a1125100e00f92da68fc297e47e0}
+      \strng{bibnamehash}{f956a1125100e00f92da68fc297e47e0}
+      \strng{authorbibnamehash}{f956a1125100e00f92da68fc297e47e0}
+      \strng{authornamehash}{0567289e4b8e418202696b255b0fb19e}
+      \strng{authorfullhash}{f956a1125100e00f92da68fc297e47e0}
+      \strng{authorfullhashraw}{f956a1125100e00f92da68fc297e47e0}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{abstract}{I propose to consider the question, "Can machines think?" This should begin with definitions of the meaning of the terms "machine" and "think." The definitions might be framed so as to reflect so far as possible the normal use of the words, but this attitude is dangerous, If the meaning of the words "machine" and "think" are to be found by examining how they are commonly used it is difficult to escape the conclusion that the meaning and the answer to the question, "Can machines think?" is to be sought in a statistical survey such as a Gallup poll. But this is absurd. Instead of attempting such a definition I shall replace the question by another, which is closely related to it and is expressed in relatively unambiguous words. The new form of the problem can be described in terms of a game which we call the 'imitation game." It is played with three people, a man (A), a woman (B), and an interrogator (C) who may be of either sex. The interrogator stays in a room apart front the other two. The object of the game for the interrogator is to determine which of the other two is the man and which is the woman. He knows them by labels X and Y, and at the end of the game he says either "X is A and Y is B" or "X is B and Y is A." The interrogator is allowed to put questions to A and B. We now ask the question, "What will happen when a machine takes the part of A in this game?" Will the interrogator decide wrongly as often when the game is played like this as he does when the game is played between a man and a woman? These questions replace our original, "Can machines think?"}
-      \field{journaltitle}{Mind}
-      \field{note}{One of the most influential papers in the history of the cognitive sciences: http://cogsci.umn.edu/millennium/final.html}
-      \field{title}{Computing Machinery and Intelligence}
-      \field{volume}{59}
-      \field{year}{1950}
+      \field{edition}{3}
+      \field{title}{{Power Electronics: Converters, Applications, and Design}}
+      \field{year}{2003}
       \true{nocite}
-      \field{pages}{433\bibrangedash 460}
-      \range{pages}{28}
-      \verb{urlraw}
-      \verb http://cogprints.org/499/
-      \endverb
-      \verb{url}
-      \verb http://cogprints.org/499/
-      \endverb
-      \keyw{computation,cognition,intelligence,turing test,turingmachine,imitation game,mind,consciousness,artificialintelligence,mind modeling,robotics,Loebner Prize,cognitive science,behaviorism,computationalism,cognitivism,functionalism,Church's Thesis}
+    \endentry
+    \entry{Rashid2013}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=878f5b85835c2ec57a487b2b1977e44d}{%
+           family={Rashid},
+           familyi={R\bibinitperiod},
+           given={Muhammad\bibnamedelima H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Upper Saddle River, NJ}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{878f5b85835c2ec57a487b2b1977e44d}
+      \strng{fullhash}{878f5b85835c2ec57a487b2b1977e44d}
+      \strng{fullhashraw}{878f5b85835c2ec57a487b2b1977e44d}
+      \strng{bibnamehash}{878f5b85835c2ec57a487b2b1977e44d}
+      \strng{authorbibnamehash}{878f5b85835c2ec57a487b2b1977e44d}
+      \strng{authornamehash}{878f5b85835c2ec57a487b2b1977e44d}
+      \strng{authorfullhash}{878f5b85835c2ec57a487b2b1977e44d}
+      \strng{authorfullhashraw}{878f5b85835c2ec57a487b2b1977e44d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{{Power Electronics: Circuits, Devices, and Applications}}
+      \field{year}{2013}
+      \true{nocite}
     \endentry
     \entry{dht11}{misc}{}{}
       \name{author}{1}{}{%
@@ -167,18 +258,18 @@
       \strng{authornamehash}{5d7f62fb0d8e8b8f34b8058c650831cd}
       \strng{authorfullhash}{5d7f62fb0d8e8b8f34b8058c650831cd}
       \strng{authorfullhashraw}{5d7f62fb0d8e8b8f34b8058c650831cd}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Information and specification about DHT11}
       \field{title}{DHT11 Datasheet}
       \true{nocite}
       \verb{urlraw}
-      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
+      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054. pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
       \endverb
       \verb{url}
-      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
+      \verb https://www.mouser.com/datasheet/2/758/DHT11-Technical-Data-Sheet-Translated-Version-1143054.%20pdf?srsltid=AfmBOorc_OlwLP2Yw4mZkvL9JEb-TnjiFdvLMAsRK0zzNZLPxIZQE0BJ
       \endverb
     \endentry
     \entry{d1_r32}{misc}{}{}
@@ -198,8 +289,8 @@
       \strng{authornamehash}{c1d98d0742bd805448310bd87d076b7e}
       \strng{authorfullhash}{c1d98d0742bd805448310bd87d076b7e}
       \strng{authorfullhashraw}{c1d98d0742bd805448310bd87d076b7e}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Wemos D1 R32 Information and Specification}
@@ -229,8 +320,8 @@
       \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
       \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
       \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{L298N Information and Specification}
@@ -262,8 +353,9 @@
       \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
       \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
       \strng{authorfullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{LM2596 Datasheet and Specifications}
@@ -274,6 +366,320 @@
       \endverb
       \verb{url}
       \verb https://www.ti.com/lit/ds/symlink/lm2596.pdf
+      \endverb
+    \endentry
+    \entry{aht20}{miscs}{}{}
+      \name{author}{1}{}{%
+        {{hash=75f4e5289658442bfedce7dc0367e470}{%
+           family={Guangzhou\bibnamedelimb Aosong\bibnamedelimb Electronics\bibnamedelima Co.},
+           familyi={G\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Ltd.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Michiel van de Wulp}%
+      }
+      \strng{namehash}{75f4e5289658442bfedce7dc0367e470}
+      \strng{fullhash}{75f4e5289658442bfedce7dc0367e470}
+      \strng{fullhashraw}{75f4e5289658442bfedce7dc0367e470}
+      \strng{bibnamehash}{75f4e5289658442bfedce7dc0367e470}
+      \strng{authorbibnamehash}{75f4e5289658442bfedce7dc0367e470}
+      \strng{authornamehash}{75f4e5289658442bfedce7dc0367e470}
+      \strng{authorfullhash}{75f4e5289658442bfedce7dc0367e470}
+      \strng{authorfullhashraw}{75f4e5289658442bfedce7dc0367e470}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{AHT20 and BMP80 datasheets}
+      \field{title}{AHT20 Temperarture and Humidity sensor}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://michiel.vanderwulp.be/domotica/Modules/AHT20-BMP280-Temp-Hum-Pressure/
+      \endverb
+      \verb{url}
+      \verb https://michiel.vanderwulp.be/domotica/Modules/AHT20-BMP280-Temp-Hum-Pressure/
+      \endverb
+    \endentry
+    \entry{mpu6500}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5d12f421e3c2dc5f23be50c0e04333d0}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={InvenSense},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {TDK InvenSense}%
+      }
+      \strng{namehash}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \strng{fullhash}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \strng{fullhashraw}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \strng{bibnamehash}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \strng{authorbibnamehash}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \strng{authornamehash}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \strng{authorfullhash}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \strng{authorfullhashraw}{5d12f421e3c2dc5f23be50c0e04333d0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-05-25}
+      \field{title}{MPU-6500 Six-Axis MEMS MotionTracking Device Datasheet}
+      \field{year}{2014}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://datasheet.octopart.com/MPU-6500-InvenSense-datasheet-138896167.pdf
+      \endverb
+      \verb{url}
+      \verb https://datasheet.octopart.com/MPU-6500-InvenSense-datasheet-138896167.pdf
+      \endverb
+    \endentry
+    \entry{ina219}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=98891ef37ae74f3a00ae9a7c9c316e78}{%
+           family={Instruments},
+           familyi={I\bibinitperiod},
+           given={Texas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Texas Instruments}%
+      }
+      \strng{namehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{fullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{bibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorbibnamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authornamehash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhash}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \strng{authorfullhashraw}{98891ef37ae74f3a00ae9a7c9c316e78}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2026-05-25}
+      \field{title}{INA219 Zer{ø}-Drift, Bidirectional Current/Power Monitor With I2C Interface Datasheet}
+      \field{year}{2021}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/ds/symlink/ina219.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/ds/symlink/ina219.pdf
+      \endverb
+    \endentry
+    \entry{TankPlatform2024}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=caee3eac07ba8565f5d4a2258a3f90a6}{%
+           family={AlexanderL},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \strng{fullhash}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \strng{fullhashraw}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \strng{bibnamehash}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \strng{authorbibnamehash}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \strng{authornamehash}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \strng{authorfullhash}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \strng{authorfullhashraw}{caee3eac07ba8565f5d4a2258a3f90a6}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.printables.com/model/890211-tank-platform-tvp-1-tracked-vehicle-platform-v1}}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Tank Platform TVP-1 Tracked Vehicle Platform V1}}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+    \entry{curiosity}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={NASA},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Curiosity mission information and features}
+      \field{title}{{Curiosity mission information}}
+      \field{year}{2011}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://science.nasa.gov/mission/msl-curiosity/
+      \endverb
+      \verb{url}
+      \verb https://science.nasa.gov/mission/msl-curiosity/
+      \endverb
+    \endentry
+    \entry{perseverance}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1f99771bc3e23e6097509a331544ab65}{%
+           family={NASA},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{fullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \strng{bibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorbibnamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authornamehash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhash}{1f99771bc3e23e6097509a331544ab65}
+      \strng{authorfullhashraw}{1f99771bc3e23e6097509a331544ab65}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{This is where you can find information about the rover}
+      \field{title}{{Perseverance mission information website}}
+      \field{year}{2020}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://science.nasa.gov/mission/mars-2020-perseverance/
+      \endverb
+      \verb{url}
+      \verb https://science.nasa.gov/mission/mars-2020-perseverance/
+      \endverb
+    \endentry
+    \entry{IEEE2025}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Xplore}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Autonomous Navigation and Control System for Mobile Robots}}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10876033
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10876033
+      \endverb
+    \endentry
+    \entry{FrancisPress2024}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Francis Academic Press}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Research on Intelligent Robot Navigation and Control System}}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.francis-press.com/uploads/papers/gq51SEwdLwNaUny9XnZrOynC4TCSZNaeDSDXXRfb.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.francis-press.com/uploads/papers/gq51SEwdLwNaUny9XnZrOynC4TCSZNaeDSDXXRfb.pdf
+      \endverb
+    \endentry
+    \entry{Volpe1999}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Jet Propulsion Laboratory}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Rocky 7: A Next Generation Mars Rover Prototype}}
+      \field{year}{1999}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www-robotics.jpl.nasa.gov/media/documents/volpe-isairas99.pdf
+      \endverb
+      \verb{url}
+      \verb https://www-robotics.jpl.nasa.gov/media/documents/volpe-isairas99.pdf
+      \endverb
+    \endentry
+    \entry{Intermodalics2024}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Intermodalics}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Navigating Unmarked Trails: Vision-Guided Autonomous Off-Road Robotics}}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.intermodalics.ai/blog/navigating-unmarked-trails-vision-guided-autonomous-off-road-robotics
+      \endverb
+      \verb{url}
+      \verb https://www.intermodalics.ai/blog/navigating-unmarked-trails-vision-guided-autonomous-off-road-robotics
+      \endverb
+    \endentry
+    \entry{Arxiv2024}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Autonomous Off-Road Navigation for Mobile Robots}}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2404.09094
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2404.09094
+      \endverb
+    \endentry
+    \entry{IEEERepeat2025}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Xplore}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Autonomous Navigation and Control System for Mobile Robots}}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10876033
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10876033
+      \endverb
+    \endentry
+    \entry{Bohrium2023}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Bohrium}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Real-Time Remote Control and Autonomous Navigation of a Two-Wheeled Robot with ROS and Raspberry Pi 4}}
+      \field{year}{2023}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.bohrium.com/en/paper-details/real-time-remote-control-and-autonomous-navigation-of-a-two-wheeled-robot-with-ros-and-raspberry-pi-4/875707403897667827-46649
+      \endverb
+      \verb{url}
+      \verb https://www.bohrium.com/en/paper-details/real-time-remote-control-and-autonomous-navigation-of-a-two-wheeled-robot-with-ros-and-raspberry-pi-4/875707403897667827-46649
+      \endverb
+    \endentry
+    \entry{Dergipark2024}{article}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{DergiPark}
+      \field{note}{Accessed: 2026-05-22}
+      \field{title}{{Design and Implementation of Autonomous Mobile Robot Systems}}
+      \field{year}{2024}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://dergipark.org.tr/en/download/article-file/3940460
+      \endverb
+      \verb{url}
+      \verb https://dergipark.org.tr/en/download/article-file/3940460
       \endverb
     \endentry
   \enddatalist

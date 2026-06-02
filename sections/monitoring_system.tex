@@ -18,6 +18,25 @@ more specific, MMS was using Pyside6, a library that allow users use QT APIS thr
     \label{fig:mms_ui_demo_1}
 \end{figure}
 
+\textbf{Control Signal}
+\par
+To display the sensor data, the control system defines different ports for sending and receiving messages. For the MMS, there are two signal messages used for control. 
+The first is a checking message to confirm that the controller board is connected to the control station. After that, the control signals are transmitted in the form of key-value pairs, 
+such as {control: left} and {control: right}.
+ 
+
+\vspace{0.5em}
+\par
+Two UDP sockets are created: a transmission socket for sending commands and a reception socket for listening to incoming packets. 
+To prevent the graphical user interface (GUI) from freezing during network operations, a dedicated background thread continuously monitors incoming UDP messages. The \verb|start()| method initializes 
+the receiver socket and launches the listening thread, while the \verb|stop()| method safely terminates communication and closes all sockets.
+
+\vspace{0.5em}
+
+\par
+The \verb|send_command()| function packages motor control instructions, including the movement direction and speed, into JSON format before transmitting them to the ESP32. This structured data format 
+simplifies message parsing and enhances communication reliability. The \verb|update_esp_ip()| method allows the target ESP32 IP address to be modified dynamically during runtime, providing flexibility when network configurations change.
+The \verb|_recv_loop()| method operates continuously in a separate thread to receive and process incoming UDP packets from the ESP32. Upon receiving data, the JSON.
 
 \subsection{Sensors data transportation protocol: Wifi + UDP}
 \par
@@ -30,7 +49,7 @@ Therefore, we still need UDP for low-latency and robust data transmission.
 \par
 
 The WEMOS D1 R32 module creates a local 2.4 GHz Wi-Fi network to establish wireless communication between the rover and the MMS control system. 
-Through this connection, control commands and telemetry data are transmitted simultaneously using UDP packets formatted in JSON.
+Through this connection, control commands and telemetry data are transmitted simultaneously using UDP packets formatted in JSON (for e.g "temperature": 20).
 \vspace{1.5 em}
 
 \begin{figure}[H]
@@ -64,7 +83,7 @@ However, one problem we had to deal with was that the control signals and sensor
 
 
 Figure~\ref{fig:udp_control_diagram} illustrates the UDP-based control workflow used in MAVEN-01. The control process begins at the monitoring station, where keyboard inputs are interpreted by the control GUI and transmitted through a UDP socket over a Wi-Fi connection. On the rover side, 
-the UDP receiver obtains the transmitted packets and forwards them to the command parser for decoding.The decoded commands are then sent to the motor driver, which controls the DC motors through PWM and GPIO signals. This workflow enables low-latency communication for real-time rover control.
+the UDP receiver obtains the transmitted packets and forwards them to the command parser for decoding.The decoded commands are then sent to the motor driver, which controls the DC motors through GPIO signal which is allowed workflow enables low-latency communication for real-time rover control.
 
 \vspace{1em}
 During the development and testing phase, MAVEN-01 experienced some issues with connection and signal transport latency. When the WEMOS D1 R32 broadcasts a Wi-Fi signal, by default,

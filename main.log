@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.16)  25 MAY 2026 09:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2026.2.16)  2 JUN 2026 08:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -816,9 +816,6 @@ Package csquotes Info: Redefining alias 'default' -> 'british'.
 
 LaTeX Warning: Label `fig:chasis_1_engine_blueprint' multiply defined.
 
-
-LaTeX Warning: Label `fig:chasis_1_engine_blueprint' multiply defined.
-
 )
 \openout1 = `main.aux'.
 
@@ -981,17 +978,17 @@ Package pdftex.def Info: images/logo-eps-converted-to.pdf  used on input line 44
 [3
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./sections/introduction.tex
-<images/rover_reference /opportunity.jpg, id=188, 1606.0pt x 903.375pt>
+<images/rover_reference /opportunity.jpg, id=192, 1606.0pt x 903.375pt>
 File: images/rover_reference /opportunity.jpg Graphic file (type jpg)
 <use images/rover_reference /opportunity.jpg>
 Package pdftex.def Info: images/rover_reference /opportunity.jpg  used on input line 19.
 (pdftex.def)             Requested size: 192.0548pt x 108.02814pt.
-<images/rover_reference /curiosity.png, id=189, 1231.60126pt x 853.1875pt>
+<images/rover_reference /curiosity.png, id=193, 1231.60126pt x 853.1875pt>
 File: images/rover_reference /curiosity.png Graphic file (type png)
 <use images/rover_reference /curiosity.png>
 Package pdftex.def Info: images/rover_reference /curiosity.png  used on input line 26.
 (pdftex.def)             Requested size: 192.0548pt x 133.03682pt.
-<images/diagram/MAVEN-01-diagram.png, id=191, 1126.2075pt x 526.96875pt>
+<images/diagram/MAVEN-01-diagram.png, id=195, 1126.2075pt x 526.96875pt>
 File: images/diagram/MAVEN-01-diagram.png Graphic file (type png)
 <use images/diagram/MAVEN-01-diagram.png>
 Package pdftex.def Info: images/diagram/MAVEN-01-diagram.png  used on input line 58.
@@ -1008,7 +1005,7 @@ l.62
  <./images/rover_reference /opportunity.jpg> <./images/rover_reference /curiosity.png>]) (./sections/design.tex
 
 [2 <./images/diagram/MAVEN-01-diagram.png>]
-<images/blueprint/maven_01_first_prototype.pdf, id=201, 597.23125pt x 845.1575pt>
+<images/blueprint/maven_01_first_prototype.pdf, id=205, 597.23125pt x 845.1575pt>
 File: images/blueprint/maven_01_first_prototype.pdf Graphic file (type pdf)
 <use images/blueprint/maven_01_first_prototype.pdf>
 Package pdftex.def Info: images/blueprint/maven_01_first_prototype.pdf  used on input line 22.
@@ -1016,7 +1013,7 @@ Package pdftex.def Info: images/blueprint/maven_01_first_prototype.pdf  used on 
 
 
 [3 <./images/blueprint/maven_01_first_prototype.pdf>]
-<images/blueprint/Maven-01-2nd-design.pdf, id=231, 1195.46625pt x 845.1575pt>
+<images/blueprint/Maven-01-2nd-design.pdf, id=235, 1195.46625pt x 845.1575pt>
 File: images/blueprint/Maven-01-2nd-design.pdf Graphic file (type pdf)
 <use images/blueprint/Maven-01-2nd-design.pdf>
 Package pdftex.def Info: images/blueprint/Maven-01-2nd-design.pdf  used on input line 68.
@@ -1024,12 +1021,12 @@ Package pdftex.def Info: images/blueprint/Maven-01-2nd-design.pdf  used on input
 
 
 [4 <./images/blueprint/Maven-01-2nd-design.pdf>]
-<images/blueprint/chassis_1_engine.pdf, id=257, 845.1575pt x 1195.46625pt>
+<images/blueprint/chassis_1_engine.pdf, id=261, 845.1575pt x 1195.46625pt>
 File: images/blueprint/chassis_1_engine.pdf Graphic file (type pdf)
 <use images/blueprint/chassis_1_engine.pdf>
 Package pdftex.def Info: images/blueprint/chassis_1_engine.pdf  used on input line 83.
 (pdftex.def)             Requested size: 384.1096pt x 543.33603pt.
-<images/blueprint/drive_wheels.pdf, id=258, 845.1575pt x 597.23125pt>
+<images/blueprint/drive_wheels.pdf, id=262, 845.1575pt x 597.23125pt>
 File: images/blueprint/drive_wheels.pdf Graphic file (type pdf)
 <use images/blueprint/drive_wheels.pdf>
 Package pdftex.def Info: images/blueprint/drive_wheels.pdf  used on input line 93.
@@ -1041,7 +1038,7 @@ Overfull \hbox (13.07346pt too wide) in paragraph at lines 105--107
 \T1/cmr/m/n/10 Passive wheel were design to at-tach 6700zz bear-ing for smooth ro-ta-tion, 6700zz has size of 15x10x4MM,
  []
 
-<images/blueprint/front_wheel_6700zz_bearing_oriented.pdf, id=281, 845.1575pt x 597.23125pt>
+<images/blueprint/front_wheel_6700zz_bearing_oriented.pdf, id=285, 845.1575pt x 597.23125pt>
 File: images/blueprint/front_wheel_6700zz_bearing_oriented.pdf Graphic file (type pdf)
 <use images/blueprint/front_wheel_6700zz_bearing_oriented.pdf>
 Package pdftex.def Info: images/blueprint/front_wheel_6700zz_bearing_oriented.pdf  used on input line 110.
@@ -1052,12 +1049,12 @@ Package pdftex.def Info: images/blueprint/front_wheel_6700zz_bearing_oriented.pd
 
 pdfTeX warning: pdflatex (file ./images/blueprint/front_wheel_6700zz_bearing_oriented.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
-<images/blueprint/front-center-axle-m5-bolt_drawing.pdf, id=323, 845.1575pt x 597.23125pt>
+<images/blueprint/front-center-axle-m5-bolt_drawing.pdf, id=327, 845.1575pt x 597.23125pt>
 File: images/blueprint/front-center-axle-m5-bolt_drawing.pdf Graphic file (type pdf)
 <use images/blueprint/front-center-axle-m5-bolt_drawing.pdf>
 Package pdftex.def Info: images/blueprint/front-center-axle-m5-bolt_drawing.pdf  used on input line 121.
 (pdftex.def)             Requested size: 332.89673pt x 235.24306pt.
-<images/blueprint/track_chain.pdf, id=324, 845.1575pt x 597.23125pt>
+<images/blueprint/track_chain.pdf, id=328, 845.1575pt x 597.23125pt>
 File: images/blueprint/track_chain.pdf Graphic file (type pdf)
 <use images/blueprint/track_chain.pdf>
 Package pdftex.def Info: images/blueprint/track_chain.pdf  used on input line 136.
@@ -1068,12 +1065,12 @@ Package pdftex.def Info: images/blueprint/track_chain.pdf  used on input line 13
 
 pdfTeX warning: pdflatex (file ./images/blueprint/track_chain.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]) (./sections/eletrical_systems.tex
-<images/diagram/tt_motor_l298.png, id=364, 587.19376pt x 403.5075pt>
+<images/diagram/tt_motor_l298.png, id=368, 587.19376pt x 403.5075pt>
 File: images/diagram/tt_motor_l298.png Graphic file (type png)
 <use images/diagram/tt_motor_l298.png>
 Package pdftex.def Info: images/diagram/tt_motor_l298.png  used on input line 17.
 (pdftex.def)             Requested size: 426.79135pt x 293.28352pt.
-<images/electrical_schematics/L298N_image.png, id=365, 710.655pt x 583.17876pt>
+<images/electrical_schematics/L298N_image.png, id=369, 710.655pt x 583.17876pt>
 File: images/electrical_schematics/L298N_image.png Graphic file (type png)
 <use images/electrical_schematics/L298N_image.png>
 Package pdftex.def Info: images/electrical_schematics/L298N_image.png  used on input line 45.
@@ -1081,12 +1078,12 @@ Package pdftex.def Info: images/electrical_schematics/L298N_image.png  used on i
 
 
 [8 <./images/diagram/tt_motor_l298.png>]
-</Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png, id=377, 733.74126pt x 582.175pt>
+</Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png, id=381, 733.74126pt x 582.175pt>
 File: /Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png Graphic file (type png)
 <use /Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png>
 Package pdftex.def Info: /Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png  used on input line 53.
 (pdftex.def)             Requested size: 384.1096pt x 304.76701pt.
-<images/electrical_schematics/h_bridge.png, id=378, 763.85374pt x 1027.84pt>
+<images/electrical_schematics/h_bridge.png, id=382, 763.85374pt x 1027.84pt>
 File: images/electrical_schematics/h_bridge.png Graphic file (type png)
 <use images/electrical_schematics/h_bridge.png>
 Package pdftex.def Info: images/electrical_schematics/h_bridge.png  used on input line 62.
@@ -1095,113 +1092,109 @@ Package pdftex.def Info: images/electrical_schematics/h_bridge.png  used on inpu
 
 [9 <./images/electrical_schematics/L298N_image.png> </Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png>]
 
-LaTeX Warning: Reference `fig:h_bridge' on page 10 undefined on input line 71.
-
-
-
 [10 <./images/electrical_schematics/h_bridge.png>]
-<images/electrical/d1_r32.png, id=394, 756.8275pt x 465.74pt>
+<images/electrical/d1_r32.png, id=401, 756.8275pt x 465.74pt>
 File: images/electrical/d1_r32.png Graphic file (type png)
 <use images/electrical/d1_r32.png>
-Package pdftex.def Info: images/electrical/d1_r32.png  used on input line 143.
-(pdftex.def)             Requested size: 426.79135pt x 262.63902pt.
+Package pdftex.def Info: images/electrical/d1_r32.png  used on input line 140.
+(pdftex.def)             Requested size: 405.45047pt x 249.506pt.
 
 
 [11 <./images/electrical/d1_r32.png>]
-<images/information/dht_11/dht11_specification.png, id=402, 692.5875pt x 588.1975pt>
+<images/information/dht_11/dht11_specification.png, id=409, 692.5875pt x 588.1975pt>
 File: images/information/dht_11/dht11_specification.png Graphic file (type png)
 <use images/information/dht_11/dht11_specification.png>
-Package pdftex.def Info: images/information/dht_11/dht11_specification.png  used on input line 174.
+Package pdftex.def Info: images/information/dht_11/dht11_specification.png  used on input line 171.
 (pdftex.def)             Requested size: 426.79135pt x 362.4708pt.
 
 
 [12 <./images/information/dht_11/dht11_specification.png>]
-<images/information/dht_11/dht11_communciation.png, id=410, 1098.1025pt x 382.42876pt>
+<images/information/dht_11/dht11_communciation.png, id=417, 1098.1025pt x 382.42876pt>
 File: images/information/dht_11/dht11_communciation.png Graphic file (type png)
 <use images/information/dht_11/dht11_communciation.png>
-Package pdftex.def Info: images/information/dht_11/dht11_communciation.png  used on input line 212.
+Package pdftex.def Info: images/information/dht_11/dht11_communciation.png  used on input line 209.
 (pdftex.def)             Requested size: 426.79135pt x 148.63309pt.
-<images/information/dht_11/dht11_signout.png, id=411, 1048.91875pt x 376.40625pt>
+<images/information/dht_11/dht11_signout.png, id=418, 1048.91875pt x 376.40625pt>
 File: images/information/dht_11/dht11_signout.png Graphic file (type png)
 <use images/information/dht_11/dht11_signout.png>
-Package pdftex.def Info: images/information/dht_11/dht11_signout.png  used on input line 228.
+Package pdftex.def Info: images/information/dht_11/dht11_signout.png  used on input line 225.
 (pdftex.def)             Requested size: 426.79135pt x 153.15588pt.
 
 
 [13 <./images/information/dht_11/dht11_communciation.png> <./images/information/dht_11/dht11_signout.png>]
-<images/information/dht_11/dht11_data_0.png, id=420, 489.83pt x 273.02pt>
+<images/information/dht_11/dht11_data_0.png, id=427, 489.83pt x 273.02pt>
 File: images/information/dht_11/dht11_data_0.png Graphic file (type png)
 <use images/information/dht_11/dht11_data_0.png>
-Package pdftex.def Info: images/information/dht_11/dht11_data_0.png  used on input line 249.
+Package pdftex.def Info: images/information/dht_11/dht11_data_0.png  used on input line 246.
 (pdftex.def)             Requested size: 426.79135pt x 237.88791pt.
-<images/information/dht_11/dht11_data_1.png, id=421, 496.85625pt x 236.885pt>
+<images/information/dht_11/dht11_data_1.png, id=428, 496.85625pt x 236.885pt>
 File: images/information/dht_11/dht11_data_1.png Graphic file (type png)
 <use images/information/dht_11/dht11_data_1.png>
-Package pdftex.def Info: images/information/dht_11/dht11_data_1.png  used on input line 257.
+Package pdftex.def Info: images/information/dht_11/dht11_data_1.png  used on input line 254.
 (pdftex.def)             Requested size: 426.79135pt x 203.48218pt.
 
 
 [14 <./images/information/dht_11/dht11_data_0.png> <./images/information/dht_11/dht11_data_1.png>]
-<images/information/dht_11/dht11_electric_table.png, id=428, 428.60126pt x 143.53625pt>
+<images/information/dht_11/dht11_electric_table.png, id=435, 428.60126pt x 143.53625pt>
 File: images/information/dht_11/dht11_electric_table.png Graphic file (type png)
 <use images/information/dht_11/dht11_electric_table.png>
-Package pdftex.def Info: images/information/dht_11/dht11_electric_table.png  used on input line 266.
+Package pdftex.def Info: images/information/dht_11/dht11_electric_table.png  used on input line 263.
 (pdftex.def)             Requested size: 426.79135pt x 142.9314pt.
-<images/electrical/hc_sr04.png, id=430, 521.95pt x 228.855pt>
+<images/electrical/hc_sr04.png, id=437, 521.95pt x 228.855pt>
 File: images/electrical/hc_sr04.png Graphic file (type png)
 <use images/electrical/hc_sr04.png>
-Package pdftex.def Info: images/electrical/hc_sr04.png  used on input line 298.
+Package pdftex.def Info: images/electrical/hc_sr04.png  used on input line 296.
 (pdftex.def)             Requested size: 426.79135pt x 187.13501pt.
 
 
 [15 <./images/information/dht_11/dht11_electric_table.png> <./images/electrical/hc_sr04.png>]
-<images/electrical_schematics/hcsr04_timing.png, id=440, 711.65875pt x 318.18875pt>
+<images/electrical_schematics/hcsr04_timing.png, id=447, 711.65875pt x 318.18875pt>
 File: images/electrical_schematics/hcsr04_timing.png Graphic file (type png)
 <use images/electrical_schematics/hcsr04_timing.png>
-Package pdftex.def Info: images/electrical_schematics/hcsr04_timing.png  used on input line 313.
+Package pdftex.def Info: images/electrical_schematics/hcsr04_timing.png  used on input line 311.
 (pdftex.def)             Requested size: 426.79135pt x 190.81761pt.
-<images/electrical_schematics/hcsr04_mcu.png, id=441, 726.715pt x 290.08376pt>
+<images/electrical_schematics/hcsr04_mcu.png, id=448, 726.715pt x 290.08376pt>
 File: images/electrical_schematics/hcsr04_mcu.png Graphic file (type png)
 <use images/electrical_schematics/hcsr04_mcu.png>
-Package pdftex.def Info: images/electrical_schematics/hcsr04_mcu.png  used on input line 320.
+Package pdftex.def Info: images/electrical_schematics/hcsr04_mcu.png  used on input line 318.
 (pdftex.def)             Requested size: 426.79135pt x 170.36447pt.
-<images/electrical_schematics/mpu9250-block-diagram.png, id=443, 433.62pt x 384.9163pt>
-File: images/electrical_schematics/mpu9250-block-diagram.png Graphic file (type png)
-<use images/electrical_schematics/mpu9250-block-diagram.png>
-Package pdftex.def Info: images/electrical_schematics/mpu9250-block-diagram.png  used on input line 337.
-(pdftex.def)             Requested size: 426.79135pt x 378.87169pt.
+<images/electrical_schematics/mpu6500-block-diagram.png, id=450, 858.20625pt x 669.50125pt>
+File: images/electrical_schematics/mpu6500-block-diagram.png Graphic file (type png)
+<use images/electrical_schematics/mpu6500-block-diagram.png>
+Package pdftex.def Info: images/electrical_schematics/mpu6500-block-diagram.png  used on input line 334.
+(pdftex.def)             Requested size: 426.79135pt x 332.95183pt.
 
 
 [16 <./images/electrical_schematics/hcsr04_timing.png> <./images/electrical_schematics/hcsr04_mcu.png>]
 
-[17 <./images/electrical_schematics/mpu9250-block-diagram.png>]
-<images/diagram/LM2596.png, id=457, 684.30656pt x 277.78781pt>
+[17 <./images/electrical_schematics/mpu6500-block-diagram.png>]
+<images/diagram/LM2596.png, id=466, 684.30656pt x 277.78781pt>
 File: images/diagram/LM2596.png Graphic file (type png)
 <use images/diagram/LM2596.png>
-Package pdftex.def Info: images/diagram/LM2596.png  used on input line 387.
+Package pdftex.def Info: images/diagram/LM2596.png  used on input line 375.
 (pdftex.def)             Requested size: 426.79135pt x 173.25665pt.
-<images/information/lm2596_spec.png, id=460, 686.565pt x 373.395pt>
+<images/information/lm2596_spec.png, id=469, 686.565pt x 373.395pt>
 File: images/information/lm2596_spec.png Graphic file (type png)
 <use images/information/lm2596_spec.png>
-Package pdftex.def Info: images/information/lm2596_spec.png  used on input line 394.
+Package pdftex.def Info: images/information/lm2596_spec.png  used on input line 382.
 (pdftex.def)             Requested size: 426.79135pt x 232.11214pt.
+<images/electrical_schematics/ina129_schematic.png, id=470, 610.28pt x 238.8925pt>
+File: images/electrical_schematics/ina129_schematic.png Graphic file (type png)
+<use images/electrical_schematics/ina129_schematic.png>
+Package pdftex.def Info: images/electrical_schematics/ina129_schematic.png  used on input line 395.
+(pdftex.def)             Requested size: 426.79135pt x 167.0705pt.
 
 
 [18 <./images/diagram/LM2596.png> <./images/information/lm2596_spec.png>]
-<images/electrical_schematics/ina129_schematic.png, id=467, 610.28pt x 238.8925pt>
-File: images/electrical_schematics/ina129_schematic.png Graphic file (type png)
-<use images/electrical_schematics/ina129_schematic.png>
-Package pdftex.def Info: images/electrical_schematics/ina129_schematic.png  used on input line 407.
-(pdftex.def)             Requested size: 426.79135pt x 167.0705pt.
-<images/information/ina219_spec.png, id=470, 676.5275pt x 198.7425pt>
+<images/information/ina219_spec.png, id=478, 676.5275pt x 198.7425pt>
 File: images/information/ina219_spec.png Graphic file (type png)
 <use images/information/ina219_spec.png>
-Package pdftex.def Info: images/information/ina219_spec.png  used on input line 415.
+Package pdftex.def Info: images/information/ina219_spec.png  used on input line 403.
 (pdftex.def)             Requested size: 426.79135pt x 125.38129pt.
+) (./sections/monitoring_system.tex
 
-
-[19 <./images/electrical_schematics/ina129_schematic.png> <./images/information/ina219_spec.png>]) (./sections/monitoring_system.tex
-<images/demo/MMS_1st_vers.png, id=482, 1100.11pt x 727.71875pt>
+[19 <./images/electrical_schematics/ina129_schematic.png> <./images/information/ina219_spec.png>]
+<images/demo/MMS_1st_vers.png, id=490, 1100.11pt x 727.71875pt>
 File: images/demo/MMS_1st_vers.png Graphic file (type png)
 <use images/demo/MMS_1st_vers.png>
 Package pdftex.def Info: images/demo/MMS_1st_vers.png  used on input line 16.
@@ -1209,23 +1202,26 @@ Package pdftex.def Info: images/demo/MMS_1st_vers.png  used on input line 16.
 
 
 [20 <./images/demo/MMS_1st_vers.png>]
-<images/diagram/sensors_data_udp.png, id=488, 413.545pt x 403.5075pt>
+<images/diagram/sensors_data_udp.png, id=496, 413.545pt x 403.5075pt>
 File: images/diagram/sensors_data_udp.png Graphic file (type png)
 <use images/diagram/sensors_data_udp.png>
-Package pdftex.def Info: images/diagram/sensors_data_udp.png  used on input line 38.
+Package pdftex.def Info: images/diagram/sensors_data_udp.png  used on input line 57.
 (pdftex.def)             Requested size: 298.75264pt x 291.5103pt.
-<images/diagram/protocol/control.drawio_new.png, id=489, 585.18625pt x 393.47pt>
+
+
+[21 <./images/diagram/sensors_data_udp.png>]
+<images/diagram/protocol/control.drawio_new.png, id=503, 585.18625pt x 393.47pt>
 File: images/diagram/protocol/control.drawio_new.png Graphic file (type png)
 <use images/diagram/protocol/control.drawio_new.png>
-Package pdftex.def Info: images/diagram/protocol/control.drawio_new.png  used on input line 60.
+Package pdftex.def Info: images/diagram/protocol/control.drawio_new.png  used on input line 79.
 (pdftex.def)             Requested size: 426.79135pt x 286.97853pt.
-
-
-[21 <./images/diagram/sensors_data_udp.png>])
+)
 
 [22 <./images/diagram/protocol/control.drawio_new.png>] (./sections/conclusions.tex)
 
 [23]
+
+[24]
 Overfull \hbox (4.79536pt too wide) in paragraph at lines 78--78
 []\T1/cmr/m/n/10 usertogo, \T1/cmr/m/it/10 Tank Track Print-in-Place Fully Para-met-ric with Mo-tor\T1/cmr/m/n/10 , [][]$\T1/cmtt/m/n/10 https : / / www . printables .
  []
@@ -1251,21 +1247,18 @@ Overfull \hbox (2.68076pt too wide) in paragraph at lines 78--78
 
 
 
-[24]
+[25]
 Overfull \hbox (29.90659pt too wide) in paragraph at lines 78--78
 \T1/cmtt/m/n/10 navigation -[] of -[] a -[] two -[] wheeled -[] robot -[] with -[] ros -[] and -[] raspberry -[] pi -[] 4 / 875707403897667827 -[]
  []
 
 
 
-[25] (./main.aux)
+[26] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1275,18 +1268,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 27005 strings out of 473190
- 485258 string characters out of 5715800
- 1420681 words of memory out of 5000000
+ 27008 strings out of 473190
+ 485304 string characters out of 5715800
+ 1420807 words of memory out of 5000000
  49740 multiletter control sequences out of 15000+600000
  569096 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  146i,11n,148p,1253b,2472s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (29 pages, 11300763 bytes).
+Output written on main.pdf (30 pages, 11149057 bytes).
 PDF statistics:
- 680 PDF objects out of 1000 (max. 8388607)
- 501 compressed objects within 6 object streams
- 125 named destinations out of 1000 (max. 500000)
+ 693 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 128 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

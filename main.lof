@@ -22,11 +22,11 @@
 \contentsline {figure}{\numberline {21}{\ignorespaces HC-SR04 specifications table }}{15}{figure.caption.27}%
 \contentsline {figure}{\numberline {22}{\ignorespaces HC-SR04 timing schematic diagram}}{16}{figure.caption.28}%
 \contentsline {figure}{\numberline {23}{\ignorespaces HC-SR04 timing schematic diagram}}{16}{figure.caption.29}%
-\contentsline {figure}{\numberline {24}{\ignorespaces MPU-9250 block diagram, more information can be found in this \href {https://cdn.sparkfun.com/assets/learn_tutorials/5/5/0/MPU9250REV1.0.pdf}{datasheet}, announced by TDK InvenSense}}{17}{figure.caption.30}%
+\contentsline {figure}{\numberline {24}{\ignorespaces MPU-6500 block diagram, more information can be found in this \href {https://datasheet.octopart.com/MPU-6500-InvenSense-datasheet-138896167.pdf}{datasheet}, announced by TDK InvenSense}}{17}{figure.caption.30}%
 \contentsline {figure}{\numberline {25}{\ignorespaces LM2596 block diagram, more information can be found in this \href {https://www.alldatasheet.com/datasheet-pdf/view/543770/TI1/LM2596.html}{datasheet}, announced by Texas Instruments}}{18}{figure.caption.31}%
 \contentsline {figure}{\numberline {26}{\ignorespaces LM2596 specifications table}}{18}{figure.caption.32}%
 \contentsline {figure}{\numberline {27}{\ignorespaces Simplified INA219 Schematic, more information can be found in this \href {https://www.ti.com/lit/ds/symlink/ina219.pdf}{datasheet}}}{19}{figure.caption.33}%
-\contentsline {figure}{\numberline {28}{\ignorespaces INA219 Specification table, it provide working current and voltage and the electrical limitations to prevent sensors damaged }}{19}{figure.caption.34}%
+\contentsline {figure}{\numberline {28}{\ignorespaces INA219 Specification table, it provides working current and voltage and the electrical limitations to prevent sensors damaged }}{19}{figure.caption.34}%
 \contentsline {figure}{\numberline {29}{\ignorespaces Main user interface of MMS first version }}{20}{figure.caption.35}%
 \contentsline {figure}{\numberline {30}{\ignorespaces Sensor data transportation workflow diagram}}{21}{figure.caption.36}%
 \contentsline {figure}{\numberline {31}{\ignorespaces UDP control workflow diagram}}{22}{figure.caption.37}%
