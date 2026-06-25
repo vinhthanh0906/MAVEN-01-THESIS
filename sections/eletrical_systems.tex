@@ -8,6 +8,7 @@ We use two 6C 18650 lithium batteries as the main power source for most of the s
 Lithium battery always has better power capacity and can be recharged. Two 6C 18650 batteries provide total 7.4V and 13A, which
 more than enough for the whole system requirement. 
 
+
 \vspace{1em}
 
 \textbf{Motor Electrical Diagram}
@@ -50,7 +51,7 @@ I_{\text{total}} = I_1 + I_2 + \cdots + I_n
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{/Users/nguyenthanhvinh/Documents/Papers/reference/final_maven_01_thesis/images/electrical_schematics/L298N.png}
+    \includegraphics[width=0.9\linewidth]{images/electrical_schematics/L298N.png}
     \caption{Schematic Diagram of L298N H-bridge DC motor driver }
     \label{fig:l298_schematic}
 \end{figure}
@@ -230,16 +231,6 @@ will pull up voltage and wait 20-40µs for DHT’s response.
 \newpage
 \textbf{DHT11 'waves back' to the MCU}
 
-Once DHT detects the start signal, it will send out a low-voltage-level response signal, which
-lasts 80µs. Then the programme of DHT sets Data Single-bus voltage level from low to high and
-keeps it for 80µs for DHT’s preparation for sending data.
-When DATA Single-Bus is at the low voltage level, this means that DHT is sending the response
-signal. Once DHT sent out the response signal, it pulls up voltage and keeps it for 80µs and
-prepares for data transmission.
-When DHT is sending data to MCU, every bit of data begins with the 50µs low-voltage-level and
-the length of the following high-voltage-level signal determines whether data bit is "0" or "1"
-,see Figures ~\ref{fig:dht11_data_0} and ~\ref{fig:dht11_data_1}.
-
 
 \begin{figure}[H]
     \centering
@@ -255,6 +246,17 @@ the length of the following high-voltage-level signal determines whether data bi
     \caption{Data "1" Indication}
     \label{fig:dht11_data_1}
 \end{figure}
+
+Once DHT detects the start signal, it will send out a low-voltage-level response signal, which
+lasts 80µs. Then the programme of DHT sets Data Single-bus voltage level from low to high and
+keeps it for 80µs for DHT’s preparation for sending data.
+When DATA Single-Bus is at the low voltage level, this means that DHT is sending the response
+signal. Once DHT sent out the response signal, it pulls up voltage and keeps it for 80µs and
+prepares for data transmission.
+When DHT is sending data to MCU, every bit of data begins with the 50µs low-voltage-level and
+the length of the following high-voltage-level signal determines whether data bit is "0" or "1"
+% ,see Figures ~\ref{fig:dht11_data_0} and ~\ref{fig:dht11_data_1}.
+
 
 \newpage
 \textbf{Electrical Characteristics}
@@ -384,6 +386,12 @@ to lower the voltage.
     \label{fig:lm2596_tables}
 \end{figure}
 
+\textbf{LED Light}
+\par
+LM2596 buck converter produces 3.3V that also work with ultra bright LEDs and provide solid lights system for Maven-01 to have ability to 
+operate in low light condition  
+
+
 \subsection{Current and voltage sensor: INA 219}
 Maven-01 was designed to be teleoperated, so we need to monitor every important status like power or current
 from it to know when we need to recharge or maintain it. We use INA219 sensor to measure current, voltage, by monitor 
@@ -408,12 +416,16 @@ The INA219 is a current and power monitoring sensor used to measure current, vol
 and power consumption in electronic systems. The sensor operates by measuring the voltage drop across a shunt resistor using Ohm’s Law~\ref{eq:ohmslaw}. 
 When current flows through the resistor, a small differential voltage is generated and measured by the INA219 to calculate the current value. 
 
+
 \vspace{0.5em}
 \par
 In addition, the sensor measures the bus voltage of the connected power source. Based on the measured current and voltage values, the power consumption 
 can also be calculated. As we mentioned before, control board is the most important part in the Maven-01 so this sensor is essential for status monitoring. Although there are
 many better option for power measure voltage like MAX17043\cite{max17043} sensors which is specified manufactured for power level measurement, INA219 still a solid choice for 
 tight budget and research purpose products.
+
+
+
 
 
 
@@ -431,7 +443,6 @@ For the microcontroller board, we use a 9V box battery since the Wemos D1 R32 bo
 from 9V to 12V. For all sensors, we use four AA batteries with a total output of 6V, but we use an LM2596 buck converter to reduce the voltage
 to 3.3V in order to avoid damaging the sensors. For the motor power supply, we use two 18650 3.7V batteries with a high current rating of 13A and a total capacity of 5200mAh,
 which is more than enough for 6--8V TT gear motors. However, when MAVEN-01 is upgraded, we will not need to replace the entire power supply system, making it more cost-efficient.
-
 
 
 

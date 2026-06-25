@@ -45,7 +45,7 @@
 \RequirePackage{csquotes}
 
 
-\RequirePackage{scrhack} % Loads packages fixes
+% \RequirePackage{scrhack} % Loads packages fixes
 
 \NewDocumentCommand{\thesisTitle} { o m }{%
  \IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}%

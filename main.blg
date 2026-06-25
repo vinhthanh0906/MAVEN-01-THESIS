@@ -1,0 +1,19 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'main.blg'
+[37] biber:342> INFO - === Mon Jun 15, 2026, 07:54:50
+[46] Biber.pm:421> INFO - Reading 'main.bcf'
+[82] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[92] Biber.pm:4487> INFO - Processing section 0
+[99] Biber.pm:4678> INFO - Looking for bibtex file 'references.bib' for section 0
+[99] bibtex.pm:1713> INFO - LaTeX decoding ...
+[109] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[181] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'variable = shifted' with 'variable = non-ignorable'
+[181] UCollate.pm:68> INFO - Overriding locale 'en-GB' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[181] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-GB'
+[181] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-GB'
+[190] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[196] bbl.pm:779> INFO - Output to main.bbl
+[197] Biber.pm:132> WARN - BibTeX subsystem: /tmp/biber_tmp_bils/33e59b5ca9ec342068223d604c3f8d55_17828.utf8, line 127, warning: 22 characters of junk seen at toplevel
+[197] Biber.pm:132> WARN - BibTeX subsystem: /tmp/biber_tmp_bils/33e59b5ca9ec342068223d604c3f8d55_17828.utf8, line 146, warning: 6 characters of junk seen at toplevel
+[197] Biber.pm:132> WARN - BibTeX subsystem: /tmp/biber_tmp_bils/33e59b5ca9ec342068223d604c3f8d55_17828.utf8, line 168, warning: 16 characters of junk seen at toplevel
+[197] Biber.pm:134> INFO - WARNINGS: 3
